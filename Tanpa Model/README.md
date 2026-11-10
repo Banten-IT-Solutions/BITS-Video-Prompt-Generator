@@ -83,7 +83,7 @@ Jangan upload foto produk asli ke Flow. Bentuk dan label produk sudah dibawa ole
 | `INGREDIENT ROLES` | Gambar 2 adalah master frame. Gambar 3 harus sama persis dengan gambar 2. |
 | `REFERENCE USE` | Gambar hanya referensi. Tidak boleh dianimasikan, di-pan, di-zoom, atau dipakai sebagai frame diam. |
 | `STYLE` | Lighting konkret: soft diffused window light from upper left, 5200K. Lensa 50mm f/2.8. Material dan kulit tangan natural. |
-| `ON-SCREEN GRAPHICS` | 3 overlay gaya sticker TikTok: outline tebal, offset shadow, highlight kuning. Pop-in sekali lalu statis. Tidak boleh menutup logo produk. |
+| `ON-SCREEN GRAPHICS` | 3 overlay gaya sticker TikTok: outline tebal, offset shadow, swipe warna aksen dari palette produk. Pop-in sekali lalu statis. Tidak boleh menutup logo produk. |
 | `TIMELINE` | Frame pertama sudah menampilkan produk. Closing ditahan 0.5–1.0 detik. |
 | `CINEMATIC NOTES` | Camera, effect, transition per beat. Hanya gerakan sederhana dan hard cut. |
 | `NEGATIVE` | Larangan wajah, orang, tangan ganda, produk ganda, produk melayang, kulit plastik, HDR, wide-angle distortion, dan efek visual berlebihan. |
@@ -120,6 +120,8 @@ Sebelum mengirim gambar, ChatGPT menjalankan `FINAL CONSISTENCY CHECK`: produk, 
 | Cut terasa aneh | Minta hard cuts, atau kurangi jumlah beat. |
 | Musik muncul | Pastikan `no background music` tetap ada. |
 | CTA/logo platform muncul | Hapus lewat video-to-video edit di Flow. |
+| Warna aksen tabrakan dengan environment | Fallback otomatis merah-kuning. Aksen harus diambil dari palette produk dan sama di semua beat. |
+| Angka di overlay mengada-ada | Angka harus bisa diverifikasi dari foto produk atau demo; kalau tidak, hapus angkanya. |
 
 Jangan pindah ke CapCut. Perbaiki di Flow.
 

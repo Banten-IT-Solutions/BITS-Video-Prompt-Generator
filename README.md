@@ -141,9 +141,9 @@ Generate in order: **1 → 2 → 3**. Image 2 is the master frame. Image 3 is ge
 | # | Beat | Window | Job |
 |---|---|---|---|
 | 1 | **Hook** | 0.0–1.5s | Product visible from frame one, headline overlay |
-| 2 | **Feature** | 1.5–3.0s | One clear product detail, feature label, red arrow |
+| 2 | **Feature** | 1.5–3.0s | One clear product detail, feature label, accent arrow |
 | 3 | **Demo** | 3.0–4.5s | One simple action; hard cut to the second product state if applicable |
-| 4 | **Benefit** | 4.5–6.5s | Product in use, benefit card, yellow sparkle |
+| 4 | **Benefit** | 4.5–6.5s | Product in use, benefit card, accent sparkle |
 | 5 | **Value** | 6.5–8.0s | Hero detail or product beauty shot |
 | 6 | **Closing** | 8.0–10.0s | Steady hold, no on-screen text, no new action |
 

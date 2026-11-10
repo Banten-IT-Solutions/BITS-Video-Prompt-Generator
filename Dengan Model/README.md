@@ -95,7 +95,7 @@ Jangan upload foto model asli ke Flow. Identitas model sudah dibawa oleh `flow-2
 | `INGREDIENT ROLES` | Gambar 2 adalah master frame. Gambar 3 harus sama persis dengan gambar 2. |
 | `REFERENCE USE` | Gambar hanya referensi. Tidak boleh dianimasikan, di-pan, di-zoom, atau dipakai sebagai frame diam. |
 | `STYLE` | Lighting konkret: soft diffused window light from upper left, 5200K. Lensa 50mm f/2.8. Tekstur kulit natural. |
-| `ON-SCREEN GRAPHICS` | 3 overlay gaya sticker TikTok: outline tebal, offset shadow, highlight kuning. Pop-in sekali lalu statis. Tidak boleh menutup wajah, mata, atau logo. |
+| `ON-SCREEN GRAPHICS` | 3 overlay gaya sticker TikTok: outline tebal, offset shadow, swipe warna aksen dari palette produk. Pop-in sekali lalu statis. Tidak boleh menutup wajah, mata, atau logo. |
 | `TIMELINE` | Frame pertama sudah menampilkan produk + model. Closing ditahan 0.5–1.0 detik. |
 | `CINEMATIC NOTES` | Camera, effect, transition per beat. Hanya gerakan sederhana dan hard cut. |
 | `NEGATIVE` | Larangan produk ganda, produk melayang, kulit plastik, HDR, wide-angle distortion, dan efek visual berlebihan. |
@@ -124,7 +124,9 @@ Sebelum mengirim gambar, ChatGPT menjalankan `FINAL CONSISTENCY CHECK`: produk, 
 | Produk berubah jadi panjang | Pastikan `WARDROBE LOCK` menyebut panjang lengan dan hem persis seperti produk, dan `NEGATIVE` melarang menambah lapisan atau panjang. |
 | Hijab tetap dipakai padahal produk pendek/terbuka | Aturan styling: produk terbuka → rambut terurai tanpa hijab; produk modest (gamis, abaya) → hijab dipertahankan. |
 | Brand muslimah tapi ada varian pendek | Muslimah override: hijab selalu dipakai, lalu pilih varian paling modest dari produk yang sama. Jangan tampilkan varian terbuka tanpa hijab. |
-| Aksesoris kepala muncul sendiri | Pastikan `no accessories that are not part of the product` tetap ada di prompt. |
+| Aksesoris kepala muncul sendiri | Pastikan `no accessories that are not the product` tetap ada di prompt. |
+| Warna aksen tabrakan dengan environment | Fallback otomatis merah-kuning. Aksen harus diambil dari palette produk dan sama di semua beat. |
+| Angka di overlay mengada-ada | Angka harus bisa diverifikasi dari foto produk atau demo; kalau tidak, hapus angkanya. |
 | Muncul orang lain atau hewan | Pastikan `no extra people, no background faces, no pets` tetap ada di prompt. |
 | Produk ganda atau melayang | Pastikan `one product unit only` dan `no floating product` tetap ada. Kurangi gerakan tangan. |
 | Tangan menutup logo | Ganti aksi jadi memegang badan produk, bukan bagian depan. |

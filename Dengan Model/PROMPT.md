@@ -194,7 +194,7 @@ If the product has no distinct states, use one state throughout and omit the sta
 Write the exact Indonesian strings once. Do not translate them later.
 
 - HOOK HEADLINE — maximum 5 words.
-- FEATURE LABEL — maximum 3 words.
+- FEATURE LABEL may be a number-led proof chip ("3 MENIT", "2-IN-1", "TAYAN 12J") — only if the number is verifiable from the uploaded images or the demo. Never invent statistics, percentages, ratings, or claims.
 - BENEFIT CARD — maximum 4 words.
 - Natural conversational Indonesian.
 - No CTA.
@@ -290,22 +290,22 @@ REFERENCE USE:
 The three images are references only. Reconstruct new live-action shots that match them in product, identity, wardrobe, lighting, and grade. Do not display, animate, pan, zoom, or freeze any reference still as a frame. Do not copy their framing as a frozen image or reproduce any border.
 
 STYLE:
-[STYLE MODE] look. [ENVIRONMENT]. Soft diffused window light from upper left, 5200K, soft natural shadows, natural contrast. [PALETTE]. 50mm equivalent, f/2.8, shallow depth of field. [COLOR GRADE]. Natural skin texture with visible pores, natural material sheen, no beauty filter, no plastic skin, no HDR, no excessive bokeh. 9:16, 1080x1920, 24fps.
+[STYLE MODE] look. [ENVIRONMENT]. Soft diffused window light from upper left, 5200K, soft natural shadows, natural contrast. [PALETTE]. 50mm equivalent, f/2.8, shallow depth of field. [COLOR GRADE]. Natural skin texture with visible pores, natural material sheen; no beauty filter, plastic skin, HDR, or excessive bokeh. 9:16, 1080x1920, 24fps.
 
 AUDIO:
-Indonesian [female/male] voice, conversational, friendly, natural pace. Match voice gender to the model's apparent gender unless the product suggests otherwise. If the brand name is unusual, include a simple phonetic spelling. VO starts at 0.2 seconds. No background music, no jingle, no beat. Only voice-over and subtle product SFX. Use the selected Indonesian voice reference if available.
+Indonesian [female/male] voice, conversational, friendly, natural pace. Match voice gender to the model's apparent gender unless the product suggests otherwise. If the brand name is unusual, include a simple phonetic spelling. VO starts at 0.2 seconds. No background music, no jingle, no beat. Only voice-over and subtle product SFX.
 
 ON-SCREEN GRAPHICS:
-Use only these three text overlays and two graphic accents. TikTok sticker style: bold, high contrast, playful. Each overlay enters once with a fast scale-in at its beat start, then stays completely static: no flicker, no morphing. Exact spelling. Never cover the model's face, eyes, or the product logo. Keep all text inside safe margins.
-1. 0.0-2.0: headline "[HOOK]" in extra-bold rounded font, all caps, max two lines: white letters, thick black outline, hard offset shadow, key word on a hand-drawn yellow marker swipe, slight counter-clockwise tilt, top-left safe area. Pops in once at 0.0, then static.
-2. 2.0-4.5: feature label "[FEATURE]" in compact bold sans-serif, all caps, white on a charcoal rounded chip tilted to match the red arrow, near [FEATURE LOCATION].
+Use only these three text overlays and two graphic accents. TikTok sticker style: bold, high contrast. Pick two accent colors from the product, [ACCENT 1] and [ACCENT 2]; identical in every beat. Each overlay enters once with a fast scale-in at its beat start, then stays completely static: no flicker, no morphing. Exact spelling. Never cover the model's face, eyes, or the product logo. Text inside safe margins.
+1. 0.0-2.0: headline "[HOOK]" in extra-bold rounded font, all caps, max two lines: white letters, thick black outline, hard offset shadow, key word on a hand-drawn [ACCENT 1] marker swipe, slight counter-clockwise tilt, top-left safe area. Pops in once at 0.0, then static.
+2. 2.0-4.5: feature label "[FEATURE]" in compact bold sans-serif, all caps, white on a charcoal rounded chip tilted to match the arrow, near [FEATURE LOCATION].
 3. 4.5-7.5: benefit card "[BENEFIT]" in black hand-drawn marker font on a white rounded card with a thin black border and a short hand-drawn underline, slight clockwise tilt, lower-left safe area.
-4. One thick red hand-drawn arrow pointing at [FEATURE] during 2.0-4.5.
-5. One small yellow doodle sparkle near [PRODUCT AREA] during 4.5-7.5.
+4. One thick [ACCENT 1] hand-drawn arrow pointing at [FEATURE] during 2.0-4.5.
+5. One small [ACCENT 2] doodle sparkle near [PRODUCT AREA] during 4.5-7.5.
 No other text, icons, badges, arrows, or doodles. No neon, glow, gradient text, 3D bevel, per-letter animation, or speech bubbles. The product's own label is part of the product and must stay unchanged.
 
 TIMELINE:
-[00:00-00:01.5] HOOK: [shot size, camera, model action or expression, product state A, environment]. The first frame already shows the product and model; no fade-in, blank frame, or logo card. Headline: "[HOOK]". VO: "[LINE 1]".
+[00:00-00:01.5] HOOK: [shot size, camera, model action or expression, product state A, environment]. First frame already shows the product and model; no fade-in, blank frame, or logo card. Headline: "[HOOK]". VO: "[LINE 1]".
 [00:01.5-00:03.0] FEATURE: [shot size, camera, model presents or uses one feature, product detail]. Feature label: "[FEATURE]". Red arrow points at [FEATURE]. VO: "[LINE 2]".
 [00:03.0-00:04.5] DEMO: [shot size, camera, model performs one simple action, hard cut to state B if applicable]. VO: "[LINE 3]".
 [00:04.5-00:06.5] BENEFIT: [shot size, camera, model relaxed or satisfied, product in use]. Benefit card: "[BENEFIT]". Yellow sparkle near [PRODUCT AREA]. VO: "[LINE 4]".
@@ -314,18 +314,18 @@ TIMELINE:
 Use clean hard cuts between beats, no transition longer than 0.2 seconds. No slideshow, collage, split screen, or storyboard borders.
 
 CINEMATIC NOTES:
-1. HOOK: CAMERA [shot size, angle, one simple movement]. EFFECT [lighting quality, depth of field, texture]. TRANSITION [cut type].
+1. HOOK: CAMERA [shot size, angle, one simple movement]. EFFECT [lighting, depth of field, texture]. TRANSITION [cut type].
 2. FEATURE: CAMERA [shot size, angle, one simple movement]. EFFECT [feature emphasis, depth of field, texture]. TRANSITION [cut type].
 3. DEMO: CAMERA [shot size, angle, one simple movement]. EFFECT [motion clarity, lighting, texture]. TRANSITION [cut type].
-4. BENEFIT: CAMERA [shot size, angle, one simple movement]. EFFECT [skin and product texture, depth of field, light]. TRANSITION [cut type].
+4. BENEFIT: CAMERA [shot size, angle, one simple movement]. EFFECT [skin and texture, depth of field, light]. TRANSITION [cut type].
 5. VALUE: CAMERA [shot size, angle, one simple movement]. EFFECT [product detail, rim light, background separation]. TRANSITION [cut type].
 6. CLOSING: CAMERA [shot size, angle, one simple movement]. EFFECT [hero lighting, color grade, sharpness]. TRANSITION none; hold to end.
 
 NO CTA / PLATFORM NEUTRAL:
-Do not show or say "checkout", "beli sekarang", "keranjang kuning", "klik link", "Shopee", "TikTok Shop", prices, ratings, discounts, urgency, or platform logos. The video must be usable on both TikTok and Shopee.
+Do not show or say "checkout", "beli sekarang", "keranjang kuning", "klik link", "Shopee", "TikTok Shop", prices, ratings, or platform logos. The video must be usable on both TikTok and Shopee.
 
 NEGATIVE:
-No on-screen text beyond the three overlays, except the product's own label; no overlay covering the face, eyes, or logo; no face morphing; no identity change; no extra people; no background faces; no pets; no duplicate product units; no floating product; no extra fingers; no deformed hands; no product deformation; no logo invention; no invented label text or certifications; no watermark; no marketplace UI; no music; no captions; no subtitles; no scene numbers; no timestamps; no storyboard borders; no storyboard page; no reference grid; no contact sheet; no camera shake; no flicker; no glow; no particles; no light leaks; no lens flares; no motion blur overlays; no dissolve; no whip pan; no zoom blur; no plastic skin; no beauty filter; no HDR; no over-sharpening; no wide-angle distortion; no lip-sync; no longer sleeves; no lengthened hem; no added layers or coverage; no hijab or head covering on non-muslimah looks when the product is sleeveless, short, or low-cut; no head accessories that are not the product; no sexualized posing; no extra props in the scene.
+No on-screen text beyond the three overlays, except the product's own label; no overlay covering the face, eyes, or logo; no face morphing; no identity change; no extra people; no background faces; no pets; no duplicate product units; no floating product; no extra fingers; no deformed hands; no product deformation; no logo invention; no invented label text or certifications; no invented numbers or statistics; no watermark; no marketplace UI; no music; no captions; no subtitles; no scene numbers; no storyboard borders; no storyboard page; no reference grid; no contact sheet; no camera shake; no flicker; no glow; no particles; no light leaks; no lens flares; no motion blur overlays; no dissolve; no whip pan; no zoom blur; no plastic skin; no beauty filter; no HDR; no over-sharpening; no wide-angle distortion; no lip-sync; no longer sleeves; no lengthened hem; no added layers or coverage; no hijab or head covering on non-muslimah looks when the product is sleeveless, short, or low-cut; no head accessories that are not the product; no sexualized posing; no extra props in the scene.
 ```
 
 Rules for the finished prompt:
@@ -343,6 +343,8 @@ Rules for the finished prompt:
 - For a worn product, the master prompt must state the true sleeve, hem, and neckline, and forbid added length or coverage.
 - Name the light source, direction, color temperature, and shadow quality. Never write "same lighting as Ingredient 2" or any other circular reference.
 - Use concrete visual language: name the light source, surface, material, lens, and action. Avoid vague words like beautiful, stunning, cinematic, or high quality.
+- Choose two accent colors from the product's own palette and name them concretely; never write "brand colors". If none is readable, use red and yellow. Same accents in every beat.
+- Any number in an overlay must be verifiable from the images or the demo. Never invent statistics.
 - Use 50mm equivalent at f/2.8 for model shots. No wide-angle distortion of face or product.
 - Keep wording plain and literal. Do not use metaphors or poetic descriptions.
 - Do not pad the prompt with adjectives, praise, or repeated safety warnings.
@@ -434,6 +436,7 @@ Before replying, verify:
 - For a worn product: sleeve and hem length identical to the product; bare skin visible exactly where the product is short; no added layers, hijab, or headwear that conflicts with the product category (muslimah override excepted).
 - The model appears adult; the framing is neutral, not sexualized.
 - Same light direction, color temperature, lens, and grade in Image 2 and Image 3.
+- Accent colors identical across all overlays and beats, from the product palette or the red/yellow fallback.
 - One product unit in every image. Nothing floating. Hands anatomically correct with five fingers and not covering the logo.
 - Product scale is realistic relative to the model.
 - No text, watermark, marketplace UI, extra people, or pets.
@@ -461,6 +464,8 @@ Do not:
 - Use background music.
 - Use more than three text overlays.
 - Use more than one arrow and one doodle.
+- Use accent colors that do not come from the product palette and are not the red/yellow fallback.
+- Invent numbers, statistics, or percentages for overlays.
 - Animate a folding, opening, or assembly mechanism.
 - Change the model's identity between shots.
 - Lengthen sleeves or hems, or add layers and coverage the product does not have.
