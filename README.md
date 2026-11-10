@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Affiliate Prompt</h1>
+  <h1>BITS Video Prompt Generator</h1>
   <p><strong>One-shot Google Flow ad kits for affiliate products.</strong></p>
   <p>One product photo in. One copy-ready master prompt + three clean ingredient images out.</p>
   <p>
@@ -17,7 +17,7 @@
 
 ## ✨ What is this?
 
-**Affiliate Prompt** is a collection of production-ready meta-prompts for **Google Flow**. It replaces the usual storyboard → keyframe → editing pipeline with one structured reply:
+**BITS Video Prompt Generator** is a collection of production-ready meta-prompts for **Google Flow**. It replaces the usual storyboard → keyframe → editing pipeline with one structured reply:
 
 - **One master prompt** — ready to copy and paste into Flow.
 - **Three ingredient images** — clean references, ready to upload.
@@ -100,8 +100,8 @@ Generate in order: **1 → 2 → 3**. Image 2 is the master frame. Image 3 is ge
 1. **Clone the repository** (optional — you can also download the files).
 
    ```bash
-   git clone https://github.com/bitscoid/Affiliate-Prompt.git
-   cd Affiliate-Prompt
+   git clone https://github.com/bitscoid/BITS-Video-Prompt-Generator.git
+   cd BITS-Video-Prompt-Generator
    ```
 
 2. **Choose a workflow**: `Dengan Model` or `Tanpa Model`.
@@ -177,7 +177,7 @@ The master prompt targets **950–1150 words** — a density guide, not a quota.
 ## 📁 Repository Structure
 
 ```text
-Affiliate-Prompt/
+BITS-Video-Prompt-Generator/
 ├── Dengan Model/
 │   ├── PROMPT.md                      # meta-prompt: product + model → Flow kit
 │   ├── README.md                      # workflow guide (Bahasa Indonesia)
@@ -246,12 +246,12 @@ Open an issue for bugs, drift patterns, or product categories that need better h
 
 ## 📄 License
 
-All rights reserved by **Banten IT Solutions**. Published for reference and use with the Affiliate Prompt workflows. For commercial licensing, white-label deployment, or collaboration, contact [bits.co.id](https://bits.co.id).
+All rights reserved by **Banten IT Solutions**. Published for reference and use with the BITS Video Prompt Generator workflows. For commercial licensing, white-label deployment, or collaboration, contact [bits.co.id](https://bits.co.id).
 
 ---
 
 <div align="center">
-  <strong>Affiliate Prompt</strong> — built with ❤️ by <a href="https://bits.co.id"><strong>Banten IT Solutions</strong></a>
+  <strong>BITS Video Prompt Generator</strong> — built with ❤️ by <a href="https://bits.co.id"><strong>Banten IT Solutions</strong></a>
   <br><br>
-  <a href="https://github.com/bitscoid/Affiliate-Prompt">github.com/bitscoid/Affiliate-Prompt</a>
+  <a href="https://github.com/bitscoid/BITS-Video-Prompt-Generator">github.com/bitscoid/BITS-Video-Prompt-Generator</a>
 </div>
