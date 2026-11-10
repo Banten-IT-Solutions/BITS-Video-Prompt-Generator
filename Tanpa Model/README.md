@@ -83,7 +83,7 @@ Jangan upload foto produk asli ke Flow. Bentuk dan label produk sudah dibawa ole
 | `INGREDIENT ROLES` | Gambar 2 adalah master frame. Gambar 3 harus sama persis dengan gambar 2. |
 | `REFERENCE USE` | Gambar hanya referensi. Tidak boleh dianimasikan, di-pan, di-zoom, atau dipakai sebagai frame diam. |
 | `STYLE` | Lighting konkret: soft diffused window light from upper left, 5200K. Lensa 50mm f/2.8. Material dan kulit tangan natural. |
-| `ON-SCREEN GRAPHICS` | 3 overlay. Tidak boleh menutup logo produk. |
+| `ON-SCREEN GRAPHICS` | 3 overlay gaya sticker TikTok: outline tebal, offset shadow, highlight kuning. Pop-in sekali lalu statis. Tidak boleh menutup logo produk. |
 | `TIMELINE` | Frame pertama sudah menampilkan produk. Closing ditahan 0.5–1.0 detik. |
 | `CINEMATIC NOTES` | Camera, effect, transition per beat. Hanya gerakan sederhana dan hard cut. |
 | `NEGATIVE` | Larangan wajah, orang, tangan ganda, produk ganda, produk melayang, kulit plastik, HDR, wide-angle distortion, dan efek visual berlebihan. |
@@ -139,7 +139,7 @@ Jangan pindah ke CapCut. Perbaiki di Flow.
 
 ## Kalau prompt terasa terlalu panjang
 
-Prompt final sekitar 950–1150 kata. Itu normal untuk 6 beat dengan 3 gambar.
+Prompt final sekitar 950–1200 kata. Itu normal untuk 6 beat dengan 3 gambar.
 
 Kalau perlu memangkas:
 

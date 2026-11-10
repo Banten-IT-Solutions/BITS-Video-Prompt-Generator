@@ -151,7 +151,7 @@ Generate in order: **1 → 2 → 3**. Image 2 is the master frame. Image 3 is ge
 
 **Audio:** Indonesian voice-over, 26–32 words total, starts at 0.2s. No music, no jingle, no captions, no subtitles.
 
-**Text:** exactly three overlays and two graphic accents. No CTA, no prices, no ratings, no platform logos.
+**Text:** exactly three overlays and two graphic accents. Sticker style: pop in once, then static. No CTA, no prices, no ratings, no platform logos.
 
 > ⚙️ **Flow note:** available duration depends on the selected Flow model and plan. The prompt is written for 10 seconds; if your Flow model only supports 8 seconds with ingredients, generate the closest duration and cut the last beat in Flow.
 
@@ -170,7 +170,7 @@ Long prompts are not the problem. Drift comes from repetition, conflicting value
 | **Hard cuts only** | No dissolve, whip pan, zoom blur, morph, or mechanism animation. |
 | **Concrete language** | Light source, surface, material, lens, and action. No “beautiful,” “stunning,” or “high quality.” |
 
-The master prompt targets **950–1150 words** — a density guide, not a quota. Every sentence must add one visual fact.
+The master prompt targets **950–1200 words** — a density guide, not a quota. Every sentence must add one visual fact.
 
 ---
 

@@ -207,7 +207,7 @@ The target range is a density guide, not a quota. Do not pad the prompt to reach
 
 # DELIVERABLE A — MASTER PROMPT
 
-Write **one** prompt in English, **950–1150 words**, ready to paste into Google Flow.
+Write **one** prompt in English, **950–1200 words**, ready to paste into Google Flow.
 
 Hard requirements:
 
@@ -257,13 +257,13 @@ AUDIO:
 Indonesian [female/male] voice, conversational, friendly, natural pace. If the brand name is unusual, include a simple phonetic spelling. VO starts at 0.2 seconds. No background music, no jingle, no beat. Only voice-over and subtle product SFX. Use the selected Indonesian voice reference if available.
 
 ON-SCREEN GRAPHICS:
-Use only these three text overlays and two graphic accents. Exact spelling, stable, readable, no flicker, no morphing. Overlays must not cover the product logo. Keep all text inside safe margins.
-1. 0.0-2.0: headline "[HOOK]" in playful hand-drawn marker font, thick white letters with black outline, slight counter-clockwise tilt, top-left safe area.
-2. 2.0-4.5: feature label "[FEATURE]" in compact bold sans-serif, white text on a charcoal rounded label, near [FEATURE LOCATION].
-3. 4.5-7.5: benefit card "[BENEFIT]" in black hand-drawn marker font on a white rounded card with a thin black border, lower-left safe area.
-4. One red hand-drawn arrow pointing at [FEATURE] during 2.0-4.5.
+Use only these three text overlays and two graphic accents. TikTok sticker style: bold, high contrast, playful. Each overlay enters once with a fast scale-in at its beat start, then stays completely static: no flicker, no morphing. Exact spelling. Never cover the product logo. Keep all text inside safe margins.
+1. 0.0-2.0: headline "[HOOK]" in extra-bold rounded font, all caps, max two lines: white letters, thick black outline, hard offset shadow, key word on a hand-drawn yellow marker swipe, slight counter-clockwise tilt, top-left safe area. Pops in once at 0.0, then static.
+2. 2.0-4.5: feature label "[FEATURE]" in compact bold sans-serif, all caps, white on a charcoal rounded chip tilted to match the red arrow, near [FEATURE LOCATION].
+3. 4.5-7.5: benefit card "[BENEFIT]" in black hand-drawn marker font on a white rounded card with a thin black border and a short hand-drawn underline, slight clockwise tilt, lower-left safe area.
+4. One thick red hand-drawn arrow pointing at [FEATURE] during 2.0-4.5.
 5. One small yellow doodle sparkle near [PRODUCT AREA] during 4.5-7.5.
-Do not generate any other text, icons, badges, arrows, or doodles. The product's own label is part of the product, not an overlay, and must stay unchanged.
+No other text, icons, badges, arrows, or doodles. No neon, glow, gradient text, 3D bevel, per-letter animation, or speech bubbles. The product's own label is part of the product, not an overlay, and must stay unchanged.
 
 TIMELINE:
 [00:00-00:01.5] HOOK: [shot size, camera, product state A, environment]. The first frame already shows the product clearly; no fade-in, no blank frame, no logo card. Headline: "[HOOK]". VO: "[LINE 1]".

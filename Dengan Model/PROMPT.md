@@ -243,7 +243,7 @@ The target range is a density guide, not a quota. Do not pad the prompt to reach
 
 # DELIVERABLE A — MASTER PROMPT
 
-Write **one** prompt in English, **950–1150 words**, ready to paste into Google Flow.
+Write **one** prompt in English, **950–1200 words**, ready to paste into Google Flow.
 
 Hard requirements:
 
@@ -273,7 +273,7 @@ Use this structure:
 Create a single 10-second, 9:16 vertical product advertisement with six quick live-action beats and clean hard cuts. Use the three ingredient images as references.
 
 PRODUCT LOCK:
-Use the exact [PRODUCT NAME] from Ingredient 1: [silhouette, proportions, main colors, materials, finish, texture, logo placement, key components]. [STATE A] in the hook and feature beats, then [STATE B] from the demo onward. Show one product unit only. The product must look identical in every shot. Preserve visible label text exactly; if it is unreadable, keep it generic. Do not redesign, recolor, distort, or invent parts, certifications, or badges.
+Use the exact [PRODUCT NAME] from Ingredient 1: [silhouette, proportions, main colors, materials, finish, texture, logo placement, key components]. [STATE A] in the hook and feature beats, then [STATE B] from the demo onward. One product unit, identical in every shot. Preserve visible label text exactly; if it is unreadable, keep it generic. Do not redesign, recolor, distort, or invent parts, certifications, or badges.
 
 MODEL LOCK:
 Use the exact model from Ingredient 2: [face shape, skin tone, eye color, hair color and length]. Preserve the same face, hair color, skin tone, body proportions, and apparent age in every shot. The model is an adult. Face at a slight 3/4 angle toward camera, eyes visible, hair not covering the eyes. The model does not speak to camera. Do not beautify, morph, age, or replace the face. No other people, no pets.
@@ -281,10 +281,10 @@ Use the exact model from Ingredient 2: [face shape, skin tone, eye color, hair c
 WARDROBE LOCK:
 [Apparel or worn product: The model wears the exact [PRODUCT NAME] from Ingredient 1 as the [garment type]: [sleeve length, hem length, neckline, fit]. [Where the product is short, bare skin stays visible: bare arms and shoulders / bare legs; no layers added.] Rest of the outfit: neutral basics in one plain color, no text, logos, or patterns. Hair: [loose and down, no hijab, no head accessories / hijab kept, hair covered].]
 [Non-worn product: The model wears the same simple outfit as Ingredient 2: [top, bottom, footwear], plain colors, no text, logos, or busy patterns.]
-Same wardrobe in every shot. No accessories that are not part of the product. Never lengthen sleeves or hems and never add coverage the product does not have.
+Same wardrobe in every shot. No accessories that are not the product. Never lengthen sleeves or hems or add coverage the product lacks.
 
 INGREDIENT ROLES:
-Ingredient 1 is the product authority. Ingredient 2 is the master frame: it defines model identity, wardrobe, environment, and the opening product state. Ingredient 3 defines human interaction, scale, and real-world use, and must match Ingredient 2 exactly in face, wardrobe, lighting, and grade.
+Ingredient 1 is the product authority. Ingredient 2 is the master frame: it defines model identity, wardrobe, environment, and the opening product state. Ingredient 3 defines interaction and scale and must match Ingredient 2 exactly in face, wardrobe, lighting, and grade.
 
 REFERENCE USE:
 The three images are references only. Reconstruct new live-action shots that match them in product, identity, wardrobe, lighting, and grade. Do not display, animate, pan, zoom, or freeze any reference still as a frame. Do not copy their framing as a frozen image or reproduce any border.
@@ -296,21 +296,21 @@ AUDIO:
 Indonesian [female/male] voice, conversational, friendly, natural pace. Match voice gender to the model's apparent gender unless the product suggests otherwise. If the brand name is unusual, include a simple phonetic spelling. VO starts at 0.2 seconds. No background music, no jingle, no beat. Only voice-over and subtle product SFX. Use the selected Indonesian voice reference if available.
 
 ON-SCREEN GRAPHICS:
-Use only these three text overlays and two graphic accents. Exact spelling, stable, readable, no flicker, no morphing. Overlays must not cover the model's face, eyes, or the product logo. Keep all text inside safe margins.
-1. 0.0-2.0: headline "[HOOK]" in playful hand-drawn marker font, thick white letters with black outline, slight counter-clockwise tilt, top-left safe area.
-2. 2.0-4.5: feature label "[FEATURE]" in compact bold sans-serif, white text on a charcoal rounded label, near [FEATURE LOCATION].
-3. 4.5-7.5: benefit card "[BENEFIT]" in black hand-drawn marker font on a white rounded card with a thin black border, lower-left safe area.
-4. One red hand-drawn arrow pointing at [FEATURE] during 2.0-4.5.
+Use only these three text overlays and two graphic accents. TikTok sticker style: bold, high contrast, playful. Each overlay enters once with a fast scale-in at its beat start, then stays completely static: no flicker, no morphing. Exact spelling. Never cover the model's face, eyes, or the product logo. Keep all text inside safe margins.
+1. 0.0-2.0: headline "[HOOK]" in extra-bold rounded font, all caps, max two lines: white letters, thick black outline, hard offset shadow, key word on a hand-drawn yellow marker swipe, slight counter-clockwise tilt, top-left safe area. Pops in once at 0.0, then static.
+2. 2.0-4.5: feature label "[FEATURE]" in compact bold sans-serif, all caps, white on a charcoal rounded chip tilted to match the red arrow, near [FEATURE LOCATION].
+3. 4.5-7.5: benefit card "[BENEFIT]" in black hand-drawn marker font on a white rounded card with a thin black border and a short hand-drawn underline, slight clockwise tilt, lower-left safe area.
+4. One thick red hand-drawn arrow pointing at [FEATURE] during 2.0-4.5.
 5. One small yellow doodle sparkle near [PRODUCT AREA] during 4.5-7.5.
-Do not generate any other text, icons, badges, arrows, or doodles. The product's own label is part of the product and must stay unchanged.
+No other text, icons, badges, arrows, or doodles. No neon, glow, gradient text, 3D bevel, per-letter animation, or speech bubbles. The product's own label is part of the product and must stay unchanged.
 
 TIMELINE:
-[00:00-00:01.5] HOOK: [shot size, camera, model action or expression, product state A, environment]. The first frame already shows the product and model clearly; no fade-in, no blank frame, no logo card. Headline: "[HOOK]". VO: "[LINE 1]".
+[00:00-00:01.5] HOOK: [shot size, camera, model action or expression, product state A, environment]. The first frame already shows the product and model; no fade-in, blank frame, or logo card. Headline: "[HOOK]". VO: "[LINE 1]".
 [00:01.5-00:03.0] FEATURE: [shot size, camera, model presents or uses one feature, product detail]. Feature label: "[FEATURE]". Red arrow points at [FEATURE]. VO: "[LINE 2]".
 [00:03.0-00:04.5] DEMO: [shot size, camera, model performs one simple action, hard cut to state B if applicable]. VO: "[LINE 3]".
 [00:04.5-00:06.5] BENEFIT: [shot size, camera, model relaxed or satisfied, product in use]. Benefit card: "[BENEFIT]". Yellow sparkle near [PRODUCT AREA]. VO: "[LINE 4]".
 [00:06.5-00:08.0] VALUE: [shot size, camera, model holds or packs the product, detail or hero]. VO: "[LINE 5]".
-[00:08.0-00:10.0] CLOSING: [hero shot, model and product together, camera]. Hold the final hero shot steady for the last 0.5-1.0 seconds; no new action, camera move, or cut. No on-screen text. VO: "[LINE 6]".
+[00:08.0-00:10.0] CLOSING: [hero shot, model and product together, camera]. Hold the final hero shot for the last 0.5-1.0 seconds; no new action, camera move, or cut. No on-screen text. VO: "[LINE 6]".
 Use clean hard cuts between beats, no transition longer than 0.2 seconds. No slideshow, collage, split screen, or storyboard borders.
 
 CINEMATIC NOTES:
