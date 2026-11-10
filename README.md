@@ -100,7 +100,7 @@ Generate in order: **1 → 2 → 3**. Image 2 is the master frame. Image 3 is ge
 1. **Clone the repository** (optional — you can also download the files).
 
    ```bash
-   git clone https://github.com/bitscoid/BITS-Video-Prompt-Generator.git
+   git clone https://github.com/Banten-IT-Solutions/BITS-Video-Prompt-Generator.git
    cd BITS-Video-Prompt-Generator
    ```
 
@@ -252,6 +252,4 @@ All rights reserved by **Banten IT Solutions**. Published for reference and use 
 
 <div align="center">
   <strong>BITS Video Prompt Generator</strong> — built with ❤️ by <a href="https://bits.co.id"><strong>Banten IT Solutions</strong></a>
-  <br><br>
-  <a href="https://github.com/bitscoid/BITS-Video-Prompt-Generator">github.com/bitscoid/BITS-Video-Prompt-Generator</a>
 </div>
