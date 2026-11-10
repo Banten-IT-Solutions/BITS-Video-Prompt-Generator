@@ -166,6 +166,7 @@ If it is worn:
   - Sleeveless, short, low-cut, swimwear, or lingerie: no hijab, no head covering, no accessories on the head. Hair loose and down — long and flowing if the reference has long hair, otherwise natural length.
   - Modest full-coverage apparel (gamis, abaya, long dress, Muslim fashion): keep the hijab if the reference wears one. Add none if the reference has no hijab.
   - Neutral products: keep the reference hairstyle and headwear as they are.
+- Muslimah override: if the product line is clearly Muslim fashion — gamis, abaya, inner, hijab, muslimah sportswear — the hijab always stays, kept from the reference or added if the reference has none, regardless of a variant's length. If a variant cannot be shown modestly, choose the most modest variant of the same product instead. Never show a muslimah line unhijabed.
 - Shoes, bags, hats, and glasses follow the same rule: if they are the product, they come from Image 1. Otherwise keep them plain and minimal or omit them.
 
 If it is not worn: keep the reference outfit, simplified to one plain-color set if it is busy.
@@ -269,7 +270,7 @@ Hard requirements:
 Use this structure:
 
 ```text
-Create a single 10-second, 9:16 vertical product advertisement with six quick live-action beats and clean hard cuts. Use the three provided ingredient images as references.
+Create a single 10-second, 9:16 vertical product advertisement with six quick live-action beats and clean hard cuts. Use the three ingredient images as references.
 
 PRODUCT LOCK:
 Use the exact [PRODUCT NAME] from Ingredient 1: [silhouette, proportions, main colors, materials, finish, texture, logo placement, key components]. [STATE A] in the hook and feature beats, then [STATE B] from the demo onward. Show one product unit only. The product must look identical in every shot. Preserve visible label text exactly; if it is unreadable, keep it generic. Do not redesign, recolor, distort, or invent parts, certifications, or badges.
@@ -310,7 +311,7 @@ TIMELINE:
 [00:04.5-00:06.5] BENEFIT: [shot size, camera, model relaxed or satisfied, product in use]. Benefit card: "[BENEFIT]". Yellow sparkle near [PRODUCT AREA]. VO: "[LINE 4]".
 [00:06.5-00:08.0] VALUE: [shot size, camera, model holds or packs the product, detail or hero]. VO: "[LINE 5]".
 [00:08.0-00:10.0] CLOSING: [hero shot, model and product together, camera]. Hold the final hero shot steady for the last 0.5-1.0 seconds; no new action, camera move, or cut. No on-screen text. VO: "[LINE 6]".
-Use clean hard cuts between beats. No transition longer than 0.2 seconds. No slideshow, no collage, no split screen, no storyboard borders.
+Use clean hard cuts between beats, no transition longer than 0.2 seconds. No slideshow, collage, split screen, or storyboard borders.
 
 CINEMATIC NOTES:
 1. HOOK: CAMERA [shot size, angle, one simple movement]. EFFECT [lighting quality, depth of field, texture]. TRANSITION [cut type].
@@ -324,7 +325,7 @@ NO CTA / PLATFORM NEUTRAL:
 Do not show or say "checkout", "beli sekarang", "keranjang kuning", "klik link", "Shopee", "TikTok Shop", prices, ratings, discounts, urgency, or platform logos. The video must be usable on both TikTok and Shopee.
 
 NEGATIVE:
-No on-screen text beyond the three overlays, except the product's own label; no overlay covering the face, eyes, or logo; no face morphing; no identity change; no extra people; no background faces; no pets; no duplicate product units; no floating product; no extra fingers; no deformed hands; no product deformation; no logo invention; no invented label text or certifications; no watermark; no marketplace UI; no music; no captions; no subtitles; no scene numbers; no timestamps; no storyboard borders; no storyboard page; no reference grid; no contact sheet; no camera shake; no flicker; no glow; no particles; no light leaks; no lens flares; no motion blur overlays; no dissolve; no whip pan; no zoom blur; no plastic skin; no beauty filter; no HDR; no over-sharpening; no wide-angle distortion; no lip-sync; no longer sleeves; no lengthened hem; no added layers or coverage; no hijab or head covering when the product is sleeveless, short, or low-cut; no head accessories that are not the product; no sexualized posing; no extra props in the scene.
+No on-screen text beyond the three overlays, except the product's own label; no overlay covering the face, eyes, or logo; no face morphing; no identity change; no extra people; no background faces; no pets; no duplicate product units; no floating product; no extra fingers; no deformed hands; no product deformation; no logo invention; no invented label text or certifications; no watermark; no marketplace UI; no music; no captions; no subtitles; no scene numbers; no timestamps; no storyboard borders; no storyboard page; no reference grid; no contact sheet; no camera shake; no flicker; no glow; no particles; no light leaks; no lens flares; no motion blur overlays; no dissolve; no whip pan; no zoom blur; no plastic skin; no beauty filter; no HDR; no over-sharpening; no wide-angle distortion; no lip-sync; no longer sleeves; no lengthened hem; no added layers or coverage; no hijab or head covering on non-muslimah looks when the product is sleeveless, short, or low-cut; no head accessories that are not the product; no sexualized posing; no extra props in the scene.
 ```
 
 Rules for the finished prompt:
@@ -430,7 +431,7 @@ Before replying, verify:
 - Same product silhouette, color, material, finish, logo placement, and visible label text in all three images.
 - No invented certifications, badges, or claims.
 - Same face, hair color, skin tone, body, and styling in Image 2 and Image 3.
-- For a worn product: sleeve and hem length identical to the product; bare skin visible exactly where the product is short; no added layers, hijab, or headwear that conflicts with the product category.
+- For a worn product: sleeve and hem length identical to the product; bare skin visible exactly where the product is short; no added layers, hijab, or headwear that conflicts with the product category (muslimah override excepted).
 - The model appears adult; the framing is neutral, not sexualized.
 - Same light direction, color temperature, lens, and grade in Image 2 and Image 3.
 - One product unit in every image. Nothing floating. Hands anatomically correct with five fingers and not covering the logo.
@@ -463,8 +464,8 @@ Do not:
 - Animate a folding, opening, or assembly mechanism.
 - Change the model's identity between shots.
 - Lengthen sleeves or hems, or add layers and coverage the product does not have.
-- Keep a hijab, head covering, or head accessory when the product is sleeveless, short, or low-cut.
-- Add a hijab or head covering for modest apparel when the reference does not wear one.
+- Keep a hijab, head covering, or head accessory when the product is sleeveless, short, or low-cut, except in a muslimah look.
+- Add a hijab or head covering for modest apparel when the reference does not wear one, except in a muslimah look.
 - Sexualize the model; lingerie and swimwear are framed like a neutral e-commerce catalog.
 - Show a revealing product on a model who appears to be underage.
 - Add extra people, background faces, or pets.

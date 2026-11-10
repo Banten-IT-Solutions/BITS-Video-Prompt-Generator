@@ -123,6 +123,7 @@ Sebelum mengirim gambar, ChatGPT menjalankan `FINAL CONSISTENCY CHECK`: produk, 
 | Wardrobe berubah | Regenerate `flow-3-lifestyle.png` dari `flow-2-hero.png`, bukan dari foto model asli. |
 | Produk berubah jadi panjang | Pastikan `WARDROBE LOCK` menyebut panjang lengan dan hem persis seperti produk, dan `NEGATIVE` melarang menambah lapisan atau panjang. |
 | Hijab tetap dipakai padahal produk pendek/terbuka | Aturan styling: produk terbuka → rambut terurai tanpa hijab; produk modest (gamis, abaya) → hijab dipertahankan. |
+| Brand muslimah tapi ada varian pendek | Muslimah override: hijab selalu dipakai, lalu pilih varian paling modest dari produk yang sama. Jangan tampilkan varian terbuka tanpa hijab. |
 | Aksesoris kepala muncul sendiri | Pastikan `no accessories that are not part of the product` tetap ada di prompt. |
 | Muncul orang lain atau hewan | Pastikan `no extra people, no background faces, no pets` tetap ada di prompt. |
 | Produk ganda atau melayang | Pastikan `one product unit only` dan `no floating product` tetap ada. Kurangi gerakan tangan. |
