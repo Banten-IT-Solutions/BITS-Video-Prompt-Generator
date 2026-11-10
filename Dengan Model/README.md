@@ -90,7 +90,8 @@ Jangan upload foto model asli ke Flow. Identitas model sudah dibawa oleh `flow-2
 | Bagian | Isi |
 |---|---|
 | `PRODUCT LOCK` | Deskripsi konkret bentuk, warna, material, finish, logo, dan komponen. Satu unit produk. Label asli dipertahankan. |
-| `MODEL LOCK` | Deskripsi konkret wajah, warna kulit, mata, rambut, dan wardrobe. Tidak ada orang lain atau hewan. |
+| `MODEL LOCK` | Deskripsi konkret wajah, warna kulit, mata, rambut, dan proporsi. Identitas dipertahankan; pakaian ditangani `WARDROBE LOCK`. Tidak ada orang lain atau hewan. |
+| `WARDROBE LOCK` | Produk yang dipakai (apparel) menjadi wardrobe utama: panjang lengan, hem, dan neckline persis produk. Bagian pendek menampilkan kulit. Rambut dan hijab mengikuti kategori produk. |
 | `INGREDIENT ROLES` | Gambar 2 adalah master frame. Gambar 3 harus sama persis dengan gambar 2. |
 | `REFERENCE USE` | Gambar hanya referensi. Tidak boleh dianimasikan, di-pan, di-zoom, atau dipakai sebagai frame diam. |
 | `STYLE` | Lighting konkret: soft diffused window light from upper left, 5200K. Lensa 50mm f/2.8. Tekstur kulit natural. |
@@ -120,6 +121,9 @@ Sebelum mengirim gambar, ChatGPT menjalankan `FINAL CONSISTENCY CHECK`: produk, 
 |---|---|
 | Wajah model berubah | Regenerate dengan `flow-2-hero.png` sebagai Ingredient 2. Pastikan `flow-3-lifestyle.png` dibuat dari gambar 2. Kurangi close-up wajah. |
 | Wardrobe berubah | Regenerate `flow-3-lifestyle.png` dari `flow-2-hero.png`, bukan dari foto model asli. |
+| Produk berubah jadi panjang | Pastikan `WARDROBE LOCK` menyebut panjang lengan dan hem persis seperti produk, dan `NEGATIVE` melarang menambah lapisan atau panjang. |
+| Hijab tetap dipakai padahal produk pendek/terbuka | Aturan styling: produk terbuka → rambut terurai tanpa hijab; produk modest (gamis, abaya) → hijab dipertahankan. |
+| Aksesoris kepala muncul sendiri | Pastikan `no accessories that are not part of the product` tetap ada di prompt. |
 | Muncul orang lain atau hewan | Pastikan `no extra people, no background faces, no pets` tetap ada di prompt. |
 | Produk ganda atau melayang | Pastikan `one product unit only` dan `no floating product` tetap ada. Kurangi gerakan tangan. |
 | Tangan menutup logo | Ganti aksi jadi memegang badan produk, bukan bagian depan. |
@@ -138,6 +142,8 @@ Jangan pindah ke CapCut. Perbaiki di Flow.
 ---
 
 ## Tips supaya wajah model konsisten
+
+- Untuk produk pakaian, pakaian di foto model tidak masalah. Produk selalu menjadi wardrobe utama, bukan pakaian referensi.
 
 - Gunakan foto model dengan wajah tajam dan terang.
 - Hindari foto wajah tertutup rambut, masker, tangan, atau bayangan keras.
@@ -168,7 +174,7 @@ Prompt final sekitar 950–1150 kata. Itu normal untuk 6 beat dengan 3 gambar.
 
 Kalau perlu memangkas:
 
-1. Jangan potong `PRODUCT LOCK`, `MODEL LOCK`, `REFERENCE USE`, atau `NEGATIVE`.
+1. Jangan potong `PRODUCT LOCK`, `MODEL LOCK`, `WARDROBE LOCK`, `REFERENCE USE`, atau `NEGATIVE`.
 2. Potong dulu detail `CINEMATIC NOTES`.
 3. Lalu ringkas `STYLE`.
 4. Terakhir kurangi detail `TIMELINE`, tetapi jangan ubah timing dan overlay.

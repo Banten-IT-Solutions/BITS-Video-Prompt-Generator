@@ -62,9 +62,10 @@ The model image is the **only** human reference and the highest authority for th
 - Preserve the model's face, hair, skin tone, body proportions, and apparent age.
 - Do not beautify, slim, age, lighten, darken, or change ethnicity.
 - Do not swap the face for a generic model.
+- The model's clothing, headwear, and accessories in the reference are styling only, not identity. The wardrobe authority rule may replace them to match the product.
 - If the model image contains a different product, ignore that product completely. The product always comes from Image 1.
 - If the face is partially hidden or low resolution, use medium or wide shots and keep the face small. Do not invent facial details.
-- If the model appears to be a minor, keep styling and poses age-appropriate.
+- If the model appears to be a minor, keep styling and poses age-appropriate. Revealing products (lingerie, swimwear, mini dress) require a model who clearly appears to be an adult.
 
 ## If parts are hidden
 
@@ -112,7 +113,7 @@ Choose silently:
 - One palette.
 - One lighting direction and color temperature.
 - One lens and depth of field.
-- One wardrobe, locked for all beats.
+- One styling plan — hair state, wardrobe, footwear, accessories — locked for all beats and set by the wardrobe authority rule below.
 - One model only.
 
 Default for model-led ads: `NATIVE UGC`, hands and face visible, natural Indonesian home or real-life setting.
@@ -134,15 +135,11 @@ The same person must appear in every shot where a person appears.
 
 Lock:
 
-- Face shape, eyes, nose, mouth, jawline.
-- Hair color, length, and style.
-- Skin tone.
-- Body proportions and apparent height.
-- Wardrobe: same top, same bottom, same colors, same accessories.
-- Keep the uploaded wardrobe unless it is clearly unsuitable for the product category. If you change it, choose one simple outfit and lock it across all images.
-- Wardrobe must have no visible text, logos, or busy patterns.
+- Identity: face shape, eyes, nose, mouth, jawline, hair color and natural length, skin tone, body proportions, apparent height and age.
+- Styling: hair arrangement, wardrobe, footwear, accessories — same in every shot and set by the wardrobe authority rule below.
+- Wardrobe and accessories must have no visible text, logos, or busy patterns.
 - Background must have no posters, brand marks, or clutter.
-- No glasses, jewelry, or makeup that were not in the reference.
+- No makeup change. No accessories beyond the styling plan.
 
 Rules:
 
@@ -154,6 +151,29 @@ Rules:
 - When the model faces camera, use a slight 3/4 angle with both eyes visible and hair not covering the eyes.
 - Avoid extreme close-ups of the face. Prefer medium shots where the product and the person are both readable.
 - If face consistency is at risk, reduce face prominence and prioritize product clarity.
+
+## Wardrobe authority — worn products
+
+Decide silently whether the product is worn on the body: clothing, footwear, headwear, or a wearable accessory.
+
+If it is worn:
+
+- The product itself is the wardrobe. Ignore the model's uploaded clothing for that category completely.
+- Never blend the product with the uploaded outfit, and never wear the product on top of a similar garment.
+- Length and cut lock: sleeve length, hem length, neckline, and fit exactly as the product. Short sleeves show bare arms. A short hem shows bare legs. Never extend, layer, or add coverage the product does not have.
+- Fill the rest with neutral basics in one plain color: simple bottoms, inner layers, footwear. No text, logos, or patterns.
+- Hair and headwear follow the product, not the reference:
+  - Sleeveless, short, low-cut, swimwear, or lingerie: no hijab, no head covering, no accessories on the head. Hair loose and down — long and flowing if the reference has long hair, otherwise natural length.
+  - Modest full-coverage apparel (gamis, abaya, long dress, Muslim fashion): keep the hijab if the reference wears one. Add none if the reference has no hijab.
+  - Neutral products: keep the reference hairstyle and headwear as they are.
+- Shoes, bags, hats, and glasses follow the same rule: if they are the product, they come from Image 1. Otherwise keep them plain and minimal or omit them.
+
+If it is not worn: keep the reference outfit, simplified to one plain-color set if it is busy.
+
+Safety, always:
+
+- The model must clearly appear to be an adult.
+- Lingerie, swimwear, and revealing products are framed like an e-commerce catalog: neutral pose, natural expression, no sexualized emphasis, no intimate close-ups.
 
 ## Product state change
 
@@ -238,7 +258,7 @@ Hard requirements:
 - CINEMATIC NOTES must cover all six beats, one line each, without adding new actions, text, or graphics.
 - Describe the product and the model in concrete physical terms. Do not rely on "exact product" or "exact model" alone.
 - State each attribute once, in the section that owns it. Never repeat an instruction in different words, and never let two sections disagree. NEGATIVE is the only place where exclusions may be repeated.
-- Every value must match the images: same light direction, same wardrobe, same environment family, same product state.
+- Every value must match the images: same light direction, same styling, same environment family, same product state.
 - REFERENCE USE must be present and must forbid animating or copying the reference stills.
 - The first frame must already show the product and the model. No fade-in, no blank frame, no logo card.
 - The closing shot must hold for 0.5–1.0 seconds with no new action, camera move, or cut.
@@ -255,19 +275,24 @@ PRODUCT LOCK:
 Use the exact [PRODUCT NAME] from Ingredient 1: [silhouette, proportions, main colors, materials, finish, texture, logo placement, key components]. [STATE A] in the hook and feature beats, then [STATE B] from the demo onward. Show one product unit only. The product must look identical in every shot. Preserve visible label text exactly; if it is unreadable, keep it generic. Do not redesign, recolor, distort, or invent parts, certifications, or badges.
 
 MODEL LOCK:
-Use the exact model from Ingredient 2: [face shape, skin tone, eye color, hair color and style, wardrobe]. Preserve the same face, hair, skin tone, body proportions, apparent age, and wardrobe in every shot. Wardrobe has no visible text, logos, or busy patterns. Face at a slight 3/4 angle when looking toward camera, eyes visible, hair not covering the eyes. The model does not speak to camera. Do not beautify, morph, age, or replace the face. No other people, no pets.
+Use the exact model from Ingredient 2: [face shape, skin tone, eye color, hair color and length]. Preserve the same face, hair color, skin tone, body proportions, and apparent age in every shot. The model is an adult. Face at a slight 3/4 angle toward camera, eyes visible, hair not covering the eyes. The model does not speak to camera. Do not beautify, morph, age, or replace the face. No other people, no pets.
+
+WARDROBE LOCK:
+[Apparel or worn product: The model wears the exact [PRODUCT NAME] from Ingredient 1 as the [garment type]: [sleeve length, hem length, neckline, fit]. [Where the product is short, bare skin stays visible: bare arms and shoulders / bare legs; no layers added.] Rest of the outfit: neutral basics in one plain color, no text, logos, or patterns. Hair: [loose and down, no hijab, no head accessories / hijab kept, hair covered].]
+[Non-worn product: The model wears the same simple outfit as Ingredient 2: [top, bottom, footwear], plain colors, no text, logos, or busy patterns.]
+Same wardrobe in every shot. No accessories that are not part of the product. Never lengthen sleeves or hems and never add coverage the product does not have.
 
 INGREDIENT ROLES:
 Ingredient 1 is the product authority. Ingredient 2 is the master frame: it defines model identity, wardrobe, environment, and the opening product state. Ingredient 3 defines human interaction, scale, and real-world use, and must match Ingredient 2 exactly in face, wardrobe, lighting, and grade.
 
 REFERENCE USE:
-The three images are references only. Reconstruct new live-action shots that match them in product, identity, wardrobe, lighting, and grade. Do not display, animate, pan, zoom, or freeze any reference still as a frame. Do not copy their framing as a frozen image, and never reproduce any border.
+The three images are references only. Reconstruct new live-action shots that match them in product, identity, wardrobe, lighting, and grade. Do not display, animate, pan, zoom, or freeze any reference still as a frame. Do not copy their framing as a frozen image or reproduce any border.
 
 STYLE:
-[STYLE MODE] look. [ENVIRONMENT]. Soft diffused window light from upper left, 5200K, soft natural shadows, natural contrast. [PALETTE]. 50mm equivalent, f/2.8, shallow depth of field. [COLOR GRADE]. Natural skin texture with visible pores, natural material sheen, no beauty filter, no plastic skin, no HDR, no excessive bokeh. Photorealistic, true-to-life materials and skin. 9:16, 1080x1920, 24fps.
+[STYLE MODE] look. [ENVIRONMENT]. Soft diffused window light from upper left, 5200K, soft natural shadows, natural contrast. [PALETTE]. 50mm equivalent, f/2.8, shallow depth of field. [COLOR GRADE]. Natural skin texture with visible pores, natural material sheen, no beauty filter, no plastic skin, no HDR, no excessive bokeh. 9:16, 1080x1920, 24fps.
 
 AUDIO:
-Indonesian [female/male] voice, conversational, friendly, natural pace. Match the voice gender to the model's apparent gender unless the product clearly suggests otherwise. If the brand name is unusual, include a simple phonetic spelling. VO starts at 0.2 seconds. No background music, no jingle, no beat. Only voice-over and subtle product SFX. Use the selected Indonesian voice reference if available.
+Indonesian [female/male] voice, conversational, friendly, natural pace. Match voice gender to the model's apparent gender unless the product suggests otherwise. If the brand name is unusual, include a simple phonetic spelling. VO starts at 0.2 seconds. No background music, no jingle, no beat. Only voice-over and subtle product SFX. Use the selected Indonesian voice reference if available.
 
 ON-SCREEN GRAPHICS:
 Use only these three text overlays and two graphic accents. Exact spelling, stable, readable, no flicker, no morphing. Overlays must not cover the model's face, eyes, or the product logo. Keep all text inside safe margins.
@@ -276,7 +301,7 @@ Use only these three text overlays and two graphic accents. Exact spelling, stab
 3. 4.5-7.5: benefit card "[BENEFIT]" in black hand-drawn marker font on a white rounded card with a thin black border, lower-left safe area.
 4. One red hand-drawn arrow pointing at [FEATURE] during 2.0-4.5.
 5. One small yellow doodle sparkle near [PRODUCT AREA] during 4.5-7.5.
-Do not generate any other text, icons, badges, arrows, or doodles. The product's own label is part of the product, not an overlay, and must stay unchanged.
+Do not generate any other text, icons, badges, arrows, or doodles. The product's own label is part of the product and must stay unchanged.
 
 TIMELINE:
 [00:00-00:01.5] HOOK: [shot size, camera, model action or expression, product state A, environment]. The first frame already shows the product and model clearly; no fade-in, no blank frame, no logo card. Headline: "[HOOK]". VO: "[LINE 1]".
@@ -284,7 +309,7 @@ TIMELINE:
 [00:03.0-00:04.5] DEMO: [shot size, camera, model performs one simple action, hard cut to state B if applicable]. VO: "[LINE 3]".
 [00:04.5-00:06.5] BENEFIT: [shot size, camera, model relaxed or satisfied, product in use]. Benefit card: "[BENEFIT]". Yellow sparkle near [PRODUCT AREA]. VO: "[LINE 4]".
 [00:06.5-00:08.0] VALUE: [shot size, camera, model holds or packs the product, detail or hero]. VO: "[LINE 5]".
-[00:08.0-00:10.0] CLOSING: [hero shot, model and product together, camera]. Hold the final hero shot steady for the last 0.5-1.0 seconds; no new action, camera move, or cut during the hold. No on-screen text. VO: "[LINE 6]".
+[00:08.0-00:10.0] CLOSING: [hero shot, model and product together, camera]. Hold the final hero shot steady for the last 0.5-1.0 seconds; no new action, camera move, or cut. No on-screen text. VO: "[LINE 6]".
 Use clean hard cuts between beats. No transition longer than 0.2 seconds. No slideshow, no collage, no split screen, no storyboard borders.
 
 CINEMATIC NOTES:
@@ -299,7 +324,7 @@ NO CTA / PLATFORM NEUTRAL:
 Do not show or say "checkout", "beli sekarang", "keranjang kuning", "klik link", "Shopee", "TikTok Shop", prices, ratings, discounts, urgency, or platform logos. The video must be usable on both TikTok and Shopee.
 
 NEGATIVE:
-No on-screen text beyond the three overlays, except the product's own label; no overlay covering the face, eyes, or logo; no face morphing; no identity change; no extra people; no background faces; no pets; no duplicate product units; no floating product; no extra fingers; no deformed hands; no product deformation; no logo invention; no invented label text or certifications; no watermark; no marketplace UI; no music; no captions; no subtitles; no scene numbers; no timestamps; no storyboard borders; no storyboard page; no reference grid; no contact sheet; no camera shake; no flicker; no glow; no particles; no light leaks; no lens flares; no motion blur overlays; no dissolve; no whip pan; no zoom blur; no plastic skin; no beauty filter; no HDR; no over-sharpening; no wide-angle distortion; no lip-sync; no extra props in the scene.
+No on-screen text beyond the three overlays, except the product's own label; no overlay covering the face, eyes, or logo; no face morphing; no identity change; no extra people; no background faces; no pets; no duplicate product units; no floating product; no extra fingers; no deformed hands; no product deformation; no logo invention; no invented label text or certifications; no watermark; no marketplace UI; no music; no captions; no subtitles; no scene numbers; no timestamps; no storyboard borders; no storyboard page; no reference grid; no contact sheet; no camera shake; no flicker; no glow; no particles; no light leaks; no lens flares; no motion blur overlays; no dissolve; no whip pan; no zoom blur; no plastic skin; no beauty filter; no HDR; no over-sharpening; no wide-angle distortion; no lip-sync; no longer sleeves; no lengthened hem; no added layers or coverage; no hijab or head covering when the product is sleeveless, short, or low-cut; no head accessories that are not the product; no sexualized posing; no extra props in the scene.
 ```
 
 Rules for the finished prompt:
@@ -314,6 +339,7 @@ Rules for the finished prompt:
 - Do not describe complex hand manipulation.
 - All six beats must use the same product, model, lighting, and grade.
 - If the product changes state, the master prompt must say "hard cut" and must not describe the mechanism.
+- For a worn product, the master prompt must state the true sleeve, hem, and neckline, and forbid added length or coverage.
 - Name the light source, direction, color temperature, and shadow quality. Never write "same lighting as Ingredient 2" or any other circular reference.
 - Use concrete visual language: name the light source, surface, material, lens, and action. Avoid vague words like beautiful, stunning, cinematic, or high quality.
 - Use 50mm equivalent at f/2.8 for model shots. No wide-angle distortion of face or product.
@@ -342,7 +368,7 @@ Generate them in this order: Image 1, then Image 2, then Image 3. Image 2 is the
 
 The lighting sentence in STYLE must be the same sentence used in Image 2 and Image 3. Do not let the prompt describe different light from the images.
 
-All three must show the **same product**. Image 2 and Image 3 must show the **same model** with identical face, hair, skin tone, body proportions, and wardrobe.
+All three must show the **same product**. Image 2 and Image 3 must show the **same model** with identical face, hair color, skin tone, body proportions, and identical styling: hair state, wardrobe, footwear, accessories.
 
 ## Image 1 — `flow-1-product.png`
 
@@ -362,7 +388,7 @@ All three must show the **same product**. Image 2 and Image 3 must show the **sa
 - 9:16 vertical, 1080×1920 or higher.
 - The model from the reference, with the product, in the opening state of the video.
 - Medium shot. Face readable but not extreme close-up. Face at a slight 3/4 angle, both eyes visible, hair not covering the eyes.
-- Wardrobe locked; Image 3 will reuse it exactly. No visible text, logos, or busy patterns.
+- Styling locked; Image 3 will reuse it exactly. For a worn product, the model wears the product itself at its true sleeve and hem length, with bare skin visible exactly where the product is short. Hair state and headwear follow the wardrobe authority rule. No visible text, logos, or busy patterns.
 - Placed in a realistic Indonesian or Southeast Asian environment appropriate to the product.
 - Background has no posters, brand marks, or clutter.
 - No extra people, no pets, no added text. The product's own label must stay unchanged.
@@ -374,7 +400,8 @@ All three must show the **same product**. Image 2 and Image 3 must show the **sa
 ## Image 3 — `flow-3-lifestyle.png`
 
 - 9:16 vertical, 1080×1920 or higher.
-- Generated from Image 2. Same model, same wardrobe, same environment family, same grade.
+- Generated from Image 2. Same model, same styling, same environment family, same grade.
+- For a worn product: the product is worn at its true length and cut, with no added layers.
 - The same model using or interacting with the product.
 - One simple, natural action. No complex hand manipulation. One product unit, natural grip, logo visible, five fingers.
 - Medium or medium close-up. Product readable. Face may be partial.
@@ -390,7 +417,7 @@ All three must show the **same product**. Image 2 and Image 3 must show the **sa
 - No extra products, no competitor products, no packaging that was not in the upload.
 - No invented accessories.
 - Do not change the product's color, shape, material, or logo.
-- Do not change the model's face, hair, skin tone, body, or wardrobe.
+- Do not change the model's face, hair color, skin tone, or body. Do not change the styling between images.
 - Do not duplicate the product, float it, or cover its logo with a hand.
 - If the product is reflective, transparent, or highly detailed, keep shots medium or wide rather than extreme close-up.
 - Generate all three images in this same reply, in order. Image 2 must be generated before Image 3.
@@ -402,7 +429,9 @@ Before replying, verify:
 
 - Same product silhouette, color, material, finish, logo placement, and visible label text in all three images.
 - No invented certifications, badges, or claims.
-- Same face, hair, skin tone, body, and wardrobe in Image 2 and Image 3.
+- Same face, hair color, skin tone, body, and styling in Image 2 and Image 3.
+- For a worn product: sleeve and hem length identical to the product; bare skin visible exactly where the product is short; no added layers, hijab, or headwear that conflicts with the product category.
+- The model appears adult; the framing is neutral, not sexualized.
 - Same light direction, color temperature, lens, and grade in Image 2 and Image 3.
 - One product unit in every image. Nothing floating. Hands anatomically correct with five fingers and not covering the logo.
 - Product scale is realistic relative to the model.
@@ -433,6 +462,11 @@ Do not:
 - Use more than one arrow and one doodle.
 - Animate a folding, opening, or assembly mechanism.
 - Change the model's identity between shots.
+- Lengthen sleeves or hems, or add layers and coverage the product does not have.
+- Keep a hijab, head covering, or head accessory when the product is sleeveless, short, or low-cut.
+- Add a hijab or head covering for modest apparel when the reference does not wear one.
+- Sexualize the model; lingerie and swimwear are framed like a neutral e-commerce catalog.
+- Show a revealing product on a model who appears to be underage.
 - Add extra people, background faces, or pets.
 - Duplicate the product or float it in the air.
 - Cover the face, eyes, or product logo with an overlay or a hand.
