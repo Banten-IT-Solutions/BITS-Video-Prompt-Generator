@@ -8,7 +8,7 @@ From the user's uploaded product image and model reference, create two deliverab
 1. One generated advertising storyboard image.
 2. One concise, ready-to-copy Google Flow video prompt that uses that storyboard image as a visual reference.
 
-This is a separate legacy storyboard workflow. Do not substitute the three-ingredient workflow in `../PROMPT.md`.
+This prompt defines a complete storyboard production workflow for product and model images. It is independent from workflows that generate separate ingredient images. Follow only the instructions in this prompt.
 
 ## Input and product truth
 
@@ -42,7 +42,7 @@ Adapt beat content to visible evidence. Keep six beats and timing even if a beat
 
 ## Deliverable 1 — detailed storyboard image
 
-Generate one professionally art-directed landscape storyboard sheet with six chronological panels in a 3-column × 2-row grid. Follow visual richness and production-note discipline of `IMAGE-STORYBOARD-GENERATOR.MD`, but obey this file's product truth, safety, and claim rules.
+Generate one professionally art-directed landscape storyboard sheet with six chronological panels in a 3-column × 2-row grid. Create a visually rich storyboard with concise production notes, while following the product-truth, safety, and claim rules stated in this prompt.
 
 Each panel must include a large cinematic scene image plus compact, readable production notes: scene number/timecode, scene purpose, camera/framing/movement, action, short Indonesian VO or NO VO, exact overlay copy or NO OVERLAY, doodle/graphic cue or NO DOODLE, animation cue or NO ANIMATION, lighting/effect, and transition. Show distinct compositions and useful visual detail, coherent across all six beats. Keep product identity and, wherever shown, model identity consistent. Resolve clothing by product cut first, then Muslimah exception, and lock one final wardrobe plan before designing panels. Repeat identical outfit, hijab/headwear state, hairstyle, accessories, footwear, and exposed-skin areas in every panel with the model; if the first model panel is without hijab, all model panels stay without hijab, and if hijab is required for a Muslimah product, all model panels keep it. No scene-specific additions or removals. Reference clothing does not override product display. Remove conflicting garments and show exposed skin as product cut requires: midi-dress legs bare, short-sleeve arms bare; no tights, trousers, leggings, undershirts, sleeves, or substitute cover-ups. For non-Muslimah products, remove a conflicting hijab when neck/neckline or natural hair must show; use the same natural reference hair loose, preserving length and identity. Apply hijab only to clearly identified Muslimah product lines. Product-only panel is fallback only if accurate, safe model styling remains impossible.
 
@@ -62,7 +62,7 @@ The prompt must:
 - State fixed 10-second, vertical 9:16, 1080×1920 output and six beat timecodes exactly as above.
 - Describe each shot with action, framing, and cut, adapted to evidence. Use conservative product-only footage if storyboard is unclear.
 - Render only exact Indonesian overlay copy explicitly shown as intended overlay in storyboard. Never render scene titles, scene numbers, timecodes, panel labels, technical notes, color names, hex/CSS codes, or production metadata.
-- Preserve the storyboard's intentional doodle and motion-graphic treatment when useful. Use restrained animation for arrows, circles, underlines, sparkles, motion trails, or icons that explain visible product details. Preserve the storyboard's hand-drawn doodle/display font, white letter outline, and contrasting non-white fill for all intended advertising overlay copy, especially the Hook and feature/benefit overlays; keep wording exact, Indonesian, and legible over every shot. Do not apply this treatment to technical notes, scene labels, or timecodes. These may be more expressive than the active One Shot workflow, but never obscure product/model or imply unsupported claims. Do not invent graphics absent from the storyboard.
+- Preserve the storyboard's intentional doodle and motion-graphic treatment when useful. Use restrained animation for arrows, circles, underlines, sparkles, motion trails, or icons that explain visible product details. Preserve the storyboard's hand-drawn doodle/display font, white letter outline, and contrasting non-white fill for all intended advertising overlay copy, especially the Hook and feature/benefit overlays; keep wording exact, Indonesian, and legible over every shot. Do not apply this treatment to technical notes, scene labels, or timecodes. Keep graphics legible and product-appropriate; never obscure product/model or imply unsupported claims. Do not invent graphics absent from the storyboard.
 - Include concise Indonesian VO, one short evidence-based line per beat, only if storyboard supplies it or it can be composed from visible facts. Never invent claims.
 - No CTA, platform logos, prices, ratings, music, captions, or subtitles.
 - End with a negative line preventing storyboard-sheet display, collage/split-screen, extra products/people, identity drift, invented text/claims, and color codes appearing as text.

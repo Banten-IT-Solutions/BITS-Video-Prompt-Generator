@@ -217,7 +217,7 @@ BITS-Video-Prompt-Generator/
 └── README.md
 ```
 
-`References/PROMPT.md` offers an optional storyboard workflow: it generates a storyboard image plus a copy-ready Google Flow prompt that uses the storyboard as a reference. The older `IMAGE-STORYBOARD-GENERATOR.MD` and `VIDEO-GENERATOR.MD` remain archived legacy files and are not required for either active workflow.
+Each `References/PROMPT.md` is a complete storyboard production workflow: it generates a storyboard image plus a copy-ready Google Flow prompt that uses the storyboard as reference. This differs from the main `PROMPT.md` workflow, which generates three ingredient images plus a Flow prompt. Choose one workflow for each production; neither is a legacy substitute for the other. `IMAGE-STORYBOARD-GENERATOR.MD` and `VIDEO-GENERATOR.MD` are supporting source references for storyboard design and video-generation guidance.
 
 ---
 
@@ -231,7 +231,7 @@ BITS-Video-Prompt-Generator/
 | [`Tanpa Model/PROMPT.md`](Tanpa%20Model/PROMPT.md) | The meta-prompt to paste into ChatGPT for the product-only kit. |
 | [`Dengan Model/References/PROMPT.md`](Dengan%20Model/References/PROMPT.md) | Optional workflow: generate storyboard image plus ready-to-paste Flow prompt from product and model images. |
 | [`Tanpa Model/References/PROMPT.md`](Tanpa%20Model/References/PROMPT.md) | Optional workflow: generate storyboard image plus ready-to-paste Flow prompt from one product image. |
-| `References/IMAGE-STORYBOARD-GENERATOR.MD` / `VIDEO-GENERATOR.MD` | Archived legacy references; not required by new storyboard+prompt workflow. |
+| `References/IMAGE-STORYBOARD-GENERATOR.MD` / `VIDEO-GENERATOR.MD` | Supporting references for storyboard design and video-generation guidance; use the matching `References/PROMPT.md` as the production prompt. |
 
 **New here?** Open the README for your chosen workflow first. It explains what to upload, what comes back, and how to recover when a result drifts. Then paste `PROMPT.md` into ChatGPT.
 
