@@ -17,6 +17,7 @@ This is a separate legacy storyboard workflow. Do not substitute the three-ingre
 - Model image is source of truth for identity and personal presentation whenever model appears. Use one adult model only if clearly adult and relevant/safe; model need not appear in every panel or video beat. Product-only framing is valid.
 - Preserve identity; do not beautify, morph, age, or replace the model. Do not infer religion, identity, or preference from appearance.
 - Muslimah rule: for a product line clearly identified as Muslimah fashion, hijab stays or is added, including short/open variants. Choose the most modest variant of the same product when available; never show a Muslimah line without hijab. Do not infer Muslimah identity from appearance alone. If accurate/safe depiction conflicts with this rule, show the product separately.
+- Do not force model presence into every scene; if a model appears, keep identity and styling consistent. Keep model's reference presentation unless the product or Muslimah rule requires adaptation.
 - If image shows product variants, choose clearest complete candidate consistently. Never blend variants. If uncertain, avoid variant-specific claims and note uncertainty briefly; still attempt storyboard generation and write Flow prompt.
 - Never invent specifications, performance, safety, durability, certification, health effects, or superiority. A staged action is not proof of performance.
 - Use Indonesian copy and locally relevant context, without stereotyped props.
@@ -36,9 +37,13 @@ Final Google Flow video must be exactly 10 seconds, vertical 9:16, 1080×1920, w
 
 Adapt beat content to visible evidence. Keep six beats and timing even if a beat uses neutral presentation. Hard cuts only; no transition effects. Voice-over must be natural Indonesian, concise, evidence-based, one short line per beat. No music, captions, subtitles, or CTA.
 
-## Deliverable 1 — storyboard image
+## Deliverable 1 — detailed storyboard image
 
-Generate one professional landscape storyboard sheet with six chronological panels in a 3-column × 2-row grid. Each panel depicts one distinct beat above, with a short Indonesian scene label and concise visual direction. Keep product and, where present, model identity/styling consistent. Use model only when adult status is clear and the model adds useful product context; product-only panels are valid. Design for legibility without cramming production notes or unsupported claims. Show only optional, evidence-supported overlay copy. Omit doodles/graphics when not useful. No hex codes or CSS values anywhere in the image. The sheet is a reference, not a frame in the final video.
+Generate one professionally art-directed landscape storyboard sheet with six chronological panels in a 3-column × 2-row grid. Follow visual richness and production-note discipline of `IMAGE-STORYBOARD-GENERATOR.MD`, but obey this file's product truth, safety, and claim rules.
+
+Each panel must include a large cinematic scene image plus compact, readable production notes: scene number/timecode, scene purpose, camera/framing/movement, action, short Indonesian VO or NO VO, exact overlay copy or NO OVERLAY, doodle/graphic cue or NO DOODLE, animation cue or NO ANIMATION, lighting/effect, and transition. Show distinct compositions and useful visual detail, coherent across all six beats. Keep product identity and, wherever shown, model identity/styling consistent. Use model only when adult status is clear, safe, and contextually useful; product-only panels are valid.
+
+Use a consistent, product-adaptive graphic identity: typography, palette, accent-line style, doodle illustration style, and animation language. Include purposeful hand-drawn arrows, circles, underlines, sparkles, motion trails, small illustrative icons, or labels when they clarify a visible feature or action. Make such doodles and motion-graphic cues noticeable and specific, not generic decoration. Graphics are encouraged when they improve the storyboard, but remain optional for scenes where they add no value. Never obscure face, product, or key detail. Keep quoted on-screen copy separate from production notes. Indonesian text only; short, readable, correctly spelled. No unsupported claims, CTA, marketplace UI, prices, or discount graphics. Never include hex/CSS codes as image text. The storyboard sheet is a reference, not a frame in the final video.
 
 If native image generation is unavailable, say so accurately; do not claim an image was generated.
 
@@ -54,7 +59,7 @@ The prompt must:
 - State fixed 10-second, vertical 9:16, 1080×1920 output and six beat timecodes exactly as above.
 - Describe each shot with action, framing, and cut, adapted to evidence. Use conservative product-only footage if storyboard is unclear.
 - Render only exact Indonesian overlay copy explicitly shown as intended overlay in storyboard. Never render scene titles, scene numbers, timecodes, panel labels, technical notes, color names, hex/CSS codes, or production metadata.
-- Keep graphics/doodles/motion graphics only if clearly intended as actual overlays and useful; animate subtly only when supported. No compulsory graphic quota.
+- Preserve the storyboard's intentional doodle and motion-graphic treatment when useful. Use restrained animation for arrows, circles, underlines, sparkles, motion trails, or icons that explain visible product details. These may be more expressive than the active One Shot workflow, but never obscure product/model or imply unsupported claims. Do not invent graphics absent from the storyboard.
 - Include concise Indonesian VO, one short evidence-based line per beat, only if storyboard supplies it or it can be composed from visible facts. Never invent claims.
 - No CTA, platform logos, prices, ratings, music, captions, or subtitles.
 - End with a negative line preventing storyboard-sheet display, collage/split-screen, extra products/people, identity drift, invented text/claims, and color codes appearing as text.

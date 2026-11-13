@@ -34,9 +34,13 @@ Final Google Flow video must be exactly 10 seconds, vertical 9:16, 1080×1920, w
 
 Adapt beat content to visible evidence. Keep six beats and timing even if a beat uses neutral product presentation. Hard cuts only; no transition effects. Voice-over must be natural Indonesian, concise, evidence-based, one short line per beat. No music, captions, subtitles, or CTA.
 
-## Deliverable 1 — storyboard image
+## Deliverable 1 — detailed storyboard image
 
-Generate one clear, professional landscape storyboard sheet with six chronological panels in a 3-column × 2-row grid. Each panel depicts one distinct beat above, with a short Indonesian scene label and a concise visual description. Keep product appearance consistent and prominent. Design typography and visual treatment for legibility, but do not cram production notes or unsupported claims into panels. Show only optional, evidence-supported overlay copy. Omit doodles/graphics when not useful. No hex codes or CSS values anywhere in the image. The storyboard image is a reference sheet, not a frame to display in the final video.
+Generate one professionally art-directed landscape storyboard sheet with six chronological panels in a 3-column × 2-row grid. Follow visual richness and production-note discipline of `IMAGE-STORYBOARD-GENERATOR.MD`, but obey this file's product truth, safety, and claim rules.
+
+Each panel must include a large cinematic scene image plus compact, readable production notes: scene number/timecode, scene purpose, camera/framing/movement, action, short Indonesian VO or NO VO, exact overlay copy or NO OVERLAY, doodle/graphic cue or NO DOODLE, animation cue or NO ANIMATION, lighting/effect, and transition. Show distinct compositions and useful visual detail, with consistent product identity across all panels.
+
+Use a consistent, product-adaptive graphic identity: typography, palette, accent-line style, doodle illustration style, and animation language. Include purposeful hand-drawn arrows, circles, underlines, sparkles, motion trails, small illustrative icons, or labels when they clarify a visible feature or action. Make doodles and motion-graphic cues noticeable and specific, not generic decoration. Graphics are encouraged when they improve the storyboard, but remain optional for scenes where they add no value. Never obscure product or key detail. Keep quoted on-screen copy separate from production notes. Indonesian text only; short, readable, correctly spelled. No unsupported claims, CTA, marketplace UI, prices, or discount graphics. Never include hex/CSS codes as image text. The storyboard sheet is a reference, not a frame to display in the final video.
 
 If native image generation is unavailable, say so accurately; do not claim an image was generated.
 
@@ -51,7 +55,7 @@ The prompt must:
 - State the fixed 10-second, vertical 9:16, 1080×1920 output and six beat timecodes exactly as above.
 - Describe each shot with action, framing, and cut, adapted to the image and product evidence. Where the storyboard is unclear, choose conservative product-only footage.
 - Render only the exact Indonesian overlay copy explicitly shown as intended overlay in storyboard. Never render scene titles, scene numbers, timecodes, panel labels, technical notes, color names, hex/CSS codes, or production metadata.
-- Keep graphics/doodles/motion graphics only if clearly intended as actual overlays and useful; animate subtly only when supported. No compulsory graphic quota.
+- Preserve the storyboard's intentional doodle and motion-graphic treatment when useful. Use restrained animation for arrows, circles, underlines, sparkles, motion trails, or icons that explain visible product details. These may be more expressive than the active One Shot workflow, but never obscure product or imply unsupported claims. Do not invent graphics absent from the storyboard.
 - Include concise Indonesian VO, one short evidence-based line per beat, only if the storyboard supplies it or it can be composed from visible facts. Never invent claims.
 - No CTA, platform logos, prices, ratings, music, captions, or subtitles.
 - End with a negative line preventing storyboard-sheet display, collage/split-screen, extra products/people, invented text/claims, and color codes appearing as text.
