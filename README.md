@@ -204,18 +204,20 @@ BITS-Video-Prompt-Generator/
 │   ├── PROMPT.md                      # meta-prompt: product + model → Flow kit
 │   ├── README.md                      # workflow guide (Bahasa Indonesia)
 │   └── References/
+│       ├── PROMPT.md                    # storyboard image + Flow-ready video prompt
 │       ├── IMAGE-STORYBOARD-GENERATOR.MD
 │       └── VIDEO-GENERATOR.MD
 ├── Tanpa Model/
 │   ├── PROMPT.md                      # meta-prompt: product only → Flow kit
 │   ├── README.md                      # workflow guide (Bahasa Indonesia)
 │   └── References/
+│       ├── PROMPT.md                    # storyboard image + Flow-ready video prompt
 │       ├── IMAGE-STORYBOARD-GENERATOR.MD
 │       └── VIDEO-GENERATOR.MD
 └── README.md
 ```
 
-`References/` contains the legacy storyboard and video generators. They are kept for reference only and are **not** part of the one-shot Flow pipeline.
+`References/PROMPT.md` offers an optional storyboard workflow: it generates a storyboard image plus a copy-ready Google Flow prompt that uses the storyboard as a reference. The older `IMAGE-STORYBOARD-GENERATOR.MD` and `VIDEO-GENERATOR.MD` remain archived legacy files and are not required for either active workflow.
 
 ---
 
@@ -227,8 +229,9 @@ BITS-Video-Prompt-Generator/
 | [`Dengan Model/PROMPT.md`](Dengan%20Model/PROMPT.md) | The meta-prompt to paste into ChatGPT for the product + model kit. |
 | [`Tanpa Model/README.md`](Tanpa%20Model/README.md) | Step-by-step guide for the product-only workflow, including optional hand handling. |
 | [`Tanpa Model/PROMPT.md`](Tanpa%20Model/PROMPT.md) | The meta-prompt to paste into ChatGPT for the product-only kit. |
-| [`Dengan Model/References/`](Dengan%20Model/References/) | Archived storyboard and video generators for the model workflow. |
-| [`Tanpa Model/References/`](Tanpa%20Model/References/) | Archived storyboard and video generators for the product-only workflow. |
+| [`Dengan Model/References/PROMPT.md`](Dengan%20Model/References/PROMPT.md) | Optional workflow: generate storyboard image plus ready-to-paste Flow prompt from product and model images. |
+| [`Tanpa Model/References/PROMPT.md`](Tanpa%20Model/References/PROMPT.md) | Optional workflow: generate storyboard image plus ready-to-paste Flow prompt from one product image. |
+| `References/IMAGE-STORYBOARD-GENERATOR.MD` / `VIDEO-GENERATOR.MD` | Archived legacy references; not required by new storyboard+prompt workflow. |
 
 **New here?** Open the README for your chosen workflow first. It explains what to upload, what comes back, and how to recover when a result drifts. Then paste `PROMPT.md` into ChatGPT.
 

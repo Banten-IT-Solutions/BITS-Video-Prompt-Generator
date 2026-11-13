@@ -184,8 +184,8 @@ Supaya **satu video bisa dipakai di dua platform**.
 |---|---|
 | `PROMPT.md` | Prompt yang di-paste ke ChatGPT. Ini yang Anda pakai. |
 | `README.md` | Panduan ini. |
-| `References/IMAGE-STORYBOARD-GENERATOR.MD` | Referensi lama: generator storyboard gambar. Tidak dipakai di alur One Shot. |
-| `References/VIDEO-GENERATOR.MD` | Referensi lama: generator video. Tidak dipakai di alur One Shot. |
+| `References/PROMPT.md` | Alur opsional: generate gambar storyboard dan prompt Google Flow siap salin dengan storyboard sebagai referensi. Input: satu foto produk. |
+| `References/IMAGE-STORYBOARD-GENERATOR.MD` / `VIDEO-GENERATOR.MD` | Referensi legacy; tidak diperlukan untuk alur storyboard + prompt baru. |
 
 Struktur folder:
 
