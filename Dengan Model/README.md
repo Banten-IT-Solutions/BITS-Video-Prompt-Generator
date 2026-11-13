@@ -94,7 +94,7 @@ Jangan upload foto model asli ke Flow. Identitas model sudah dibawa oleh `flow-2
 |---|---|
 | `PRODUCT LOCK` | Deskripsi konkret bentuk, warna, material, finish, logo, dan komponen. Satu unit produk. Label asli dipertahankan. |
 | `MODEL LOCK` | Identitas model mengikuti foto referensi; tidak menyimpulkan agama dari penampilan. |
-| `WARDROBE LOCK` | Produk wearable ditampilkan akurat jika relevan dan aman. Aturan Muslimah tetap berlaku: untuk lini Muslimah, hijab selalu dipakai; pilih varian paling modest dari produk yang sama bila perlu. |
+| `WARDROBE LOCK` | Potongan produk wearable menjadi acuan: jangan tutupi bagian tangan/kaki yang seharusnya terlihat dengan stocking, celana, manset, atau lapisan tambahan. Untuk produk non-Muslimah, lepas hijab referensi bila menutupi leher/neckline/rambut yang perlu terlihat; rambut asli dibiarkan terurai. Aturan hijab berlaku untuk lini produk Muslimah saja. |
 | `INGREDIENT ROLES` | Gambar 2 adalah master frame. Gambar 3 harus sama persis dengan gambar 2. |
 | `REFERENCE USE` | Gambar hanya referensi. Tidak boleh dianimasikan, di-pan, di-zoom, atau dipakai sebagai frame diam. |
 | `STYLE` | Lighting, lensa, dan depth of field dipilih agar sesuai produk, skala shot, serta lingkungan. |
@@ -125,8 +125,8 @@ Sebelum mengirim gambar, ChatGPT menjalankan `FINAL CONSISTENCY CHECK`: produk, 
 | Wajah model berubah | Jika model dipakai, regenerate dengan `flow-2-hero.png` sebagai Ingredient 2 dan buat `flow-3-lifestyle.png` dari gambar 2. Kurangi close-up. Product-only shot tetap valid.
 | Wardrobe berubah | Regenerate `flow-3-lifestyle.png` dari `flow-2-hero.png`, bukan dari foto model asli. |
 | Produk wearable berubah bentuk | Pastikan `WARDROBE LOCK` menyebut cut, panjang, dan fit yang terlihat. Jika tidak bisa ditampilkan akurat dengan presentasi model, gunakan shot produk terpisah.
-| Model styling berubah tanpa diminta | Pertahankan penampilan personal dari foto model, kecuali aturan produk Muslimah atau instruksi wardrobe eksplisit berlaku. Jangan menyimpulkan agama dari penampilan. |
-| Produk lini Muslimah | Hijab selalu dipakai, termasuk untuk varian pendek/terbuka; pilih varian paling modest dari produk yang sama bila tersedia. Jangan tampilkan lini Muslimah tanpa hijab. |
+| Pakaian tambahan menutupi produk | Tegaskan cut produk dan area kulit yang harus terlihat. Larang stocking/celana/legging di bawah midi dress dan manset/lengan tambahan pada bagian yang memang terbuka. |
+| Hijab menutupi produk non-Muslimah | Lepas hijab bila menutupi leher, neckline, atau rambut yang diperlukan untuk menampilkan produk. Rambut mengikuti foto model dan dibiarkan terurai; jangan ubah identitas. Produk lini Muslimah tetap memakai hijab. |
 | Aksesoris kepala muncul sendiri | Pastikan `no accessories that are not the product` tetap ada di prompt. |
 | Warna aksen tabrakan dengan environment | Pilih ulang aksen dari palet produk; jika warnanya tidak jelas, pilih dua warna netral berkontras tinggi. Gunakan sama di semua beat. |
 | Overlay tidak sesuai produk atau klaim tidak terbukti | Ganti dengan fitur/benefit spesifik yang didukung foto atau demo. Angka hanya boleh dipakai jika persisnya bisa diverifikasi; jika tidak, gunakan label nonnumerik. |

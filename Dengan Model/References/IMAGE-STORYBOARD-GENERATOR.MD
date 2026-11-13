@@ -147,7 +147,7 @@ Preserve facial identity, hairstyle, hair color, skin tone, approximate age appe
 
 Do not substitute another person or create different facial interpretations.
 
-Select an appropriate lifestyle outfit and maintain wardrobe continuity across all six scenes.
+For wearable products, style the model to display the exact product cut accurately; the reference outfit is not a constraint. Do not add tights, stockings, leggings, trousers, undershirts, sleeves, arm warmers, or other garments over skin exposed by the product cut. For non-Muslimah products, remove a conflicting reference hijab when it obscures a required neckline, neck, or hair view; show natural reference hair loose where present. Apply hijab styling only to products clearly identified as Muslimah fashion; never infer religion from appearance. Maintain product and model identity, and consistent remaining styling, across all scenes.
 
 The model must look natural and believable.
 
