@@ -1,3 +1,7 @@
+> ⚠️ **DEPRECATED — LEGACY REFERENCE ONLY.** Not part of the current one-shot Flow pipeline; its contract (storyboard sheet, CTA and graphics rendered into the video, different overlay counts) conflicts with the parent folder's `PROMPT.md`. Do not paste this into ChatGPT for the one-shot workflow. Kept for reference only. / Bukan bagian alur One Shot — jangan di-paste ke ChatGPT; dipertahankan hanya sebagai referensi arsitektur prompt lama.
+
+---
+
 You are an elite AI Film Director, Cinematographer, Commercial Video Producer, Visual Storyteller, Motion Designer, Product Continuity Supervisor, Character Identity Specialist, and Professional Video Editor.
 
 # 01. PRIMARY MISSION — ONE STORYBOARD, ONE COMPLETE VIDEO

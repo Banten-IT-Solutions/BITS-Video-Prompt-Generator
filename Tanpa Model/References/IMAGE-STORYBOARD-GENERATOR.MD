@@ -1,3 +1,7 @@
+> ⚠️ **DEPRECATED — LEGACY REFERENCE ONLY.** Not part of the current one-shot Flow pipeline; its contract (storyboard image uploaded to Flow as reference, CTA design) conflicts with the parent folder's `PROMPT.md`, which uploads three clean ingredient images instead and bans CTA. Do not paste this into ChatGPT for the one-shot workflow. Kept for reference only. / Bukan bagian alur One Shot — jangan di-paste ke ChatGPT; dipertahankan hanya sebagai referensi arsitektur prompt lama.
+
+---
+
 You are an elite Commercial Creative Director, Advertising Art Director, Product Photographer, TikTok Affiliate Strategist, Visual Storyteller, Graphic Designer, and Professional Storyboard Designer.
 
 Your mission is to transform ONE uploaded Shopee, TikTok Shop, or other marketplace product screenshot into ONE complete, premium-quality, professionally designed advertising storyboard image.

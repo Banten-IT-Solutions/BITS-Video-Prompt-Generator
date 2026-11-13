@@ -1,7 +1,7 @@
 <div align="center">
   <h1>BITS Video Prompt Generator</h1>
   <p><strong>One-shot Google Flow ad kits for affiliate products.</strong></p>
-  <p>One product photo in. One copy-ready master prompt + three clean ingredient images out.</p>
+  <p>One product photo (plus optional model reference) in. One copy-ready master prompt + three clean ingredient images out.</p>
   <p>
     <img src="https://img.shields.io/badge/Google%20Flow-4285F4?style=flat&logo=google&logoColor=white" alt="Google Flow" />
     <img src="https://img.shields.io/badge/Veo-000000?style=flat&logo=google&logoColor=white" alt="Veo" />
@@ -9,7 +9,6 @@
     <img src="https://img.shields.io/badge/Indonesian-FF0000?style=flat&logo=googletranslate&logoColor=white" alt="Indonesian" />
     <img src="https://img.shields.io/badge/9%3A16-111827?style=flat" alt="9:16 vertical" />
     <img src="https://img.shields.io/badge/10s-111827?style=flat" alt="10 seconds" />
-    <img src="https://img.shields.io/badge/license-Proprietary-1F2937?style=flat" alt="Proprietary" />
   </p>
 </div>
 
@@ -23,11 +22,11 @@
 - **Three ingredient images** — clean references, ready to upload.
 - **Zero storyboards** — no shot list, no phase gates, no approval step.
 
-Give ChatGPT a product photo — plus a model photo if you choose the **Dengan Model** workflow — and it returns everything Flow needs: a locked product, a locked human reference, a master frame, a real-world interaction frame, and a six-beat timeline.
+Give ChatGPT a product photo — plus a model photo for **Dengan Model** — and it returns a product-locked master prompt, three ingredient images, and a fixed six-beat timeline whose actions, overlays, and visual treatment adapt to the product evidence and selected workflow.
 
 Flow settings stay manual. The kit deliberately does not prescribe model names, duration presets, or upload steps. You configure Flow; the prompt handles the creative and visual locks.
 
-> **Built for Indonesian affiliate ads.** Natural Indonesian voice-over, local environment and styling, no CTA, no music, no platform logos — one video can run on both TikTok and Shopee.
+> **Built for Indonesian affiliate ads.** Natural Indonesian voice-over and locally relevant product context; environment/styling follow product category and reference, without stereotypes. No CTA, music, or platform logos.
 
 ---
 
@@ -36,25 +35,47 @@ Flow settings stay manual. The kit deliberately does not prescribe model names, 
 | | **Dengan Model** | **Tanpa Model** |
 |---|---|---|
 | **Input** | 1 product photo + 1 model photo | 1 product photo only |
-| **Human reference** | Full model: face, hair, skin tone, body proportions, wardrobe | No face, head, or torso; maximum one right hand and forearm, optional |
-| **Best for** | Fashion, beauty, accessories, lifestyle demos | Packaged goods, tools, home, electronics, products that do not need a person |
+| **Human reference** | Adult model only where relevant/safe; identity follows reference; product-only shots allowed. Muslimah product lines retain hijab rule. | No face/head/torso; optional single right hand only when useful |
+| **Best for** | Products where adult model adds relevant context and can be represented safely | Products suited to neutral packshots; optional hand only when it adds useful scale/use context |
 | **Guide** | [`Dengan Model/README.md`](Dengan%20Model/README.md) | [`Tanpa Model/README.md`](Tanpa%20Model/README.md) |
 | **Prompt** | [`Dengan Model/PROMPT.md`](Dengan%20Model/PROMPT.md) | [`Tanpa Model/PROMPT.md`](Tanpa%20Model/PROMPT.md) |
 
-Both workflows use the same output contract: **one master prompt + three images**, nothing else.
+Both workflows return **one master prompt + three images**. With Model may add a concise conditional note for unconfirmed model usage rights or material input ambiguity; this narrowly scoped exception does not change core output format.
 
 ---
 
 ## 📦 What You Get
 
+For model workflow, use photos only when you have rights/consent for commercial publication. Requirements can vary by jurisdiction and platform; this repository is not legal advice.
+
 | Output | Role |
 |---|---|
 | `flow-1-product.png` | **Product authority.** Clean packshot on a plain background. Locks silhouette, color, material, finish, logo, and label. |
-| `flow-2-hero.png` | **Master frame.** Product — and model, if selected — in a realistic environment. Locks scale, composition, lighting, grade, and the opening product state. |
-| `flow-3-lifestyle.png` | **Interaction frame.** Generated from `flow-2-hero.png`, never from the original photo. Locks hand interaction, scale, and real-world use. |
-| **Master prompt** | One copy-safe fenced code block: product lock, human lock, style, overlays, six-beat timeline, cinematic notes, and negative rules. |
+| `flow-2-hero.png` | **Master frame.** Product-led, with model only if relevant and safe. Locks scale, composition, lighting, grade, and verified opening state. |
+| `flow-3-lifestyle.png` | **Context frame.** Generated from `flow-2-hero.png`, never independently. Shows a product-appropriate interaction or product-only composition; hand/model use is optional when it adds no value or cannot be shown safely. |
+| **Master prompt** | One copy-safe fenced code block: product lock, optional human lock, product-adaptive style/overlays/actions, fixed 10s six-beat timeline, cinematic notes, and negative rules. |
 
-> **Three images. One prompt. No storyboard.** The response is intentionally limited so nothing breaks when copied into Flow.
+> **Three images. One prompt. No storyboard.** The response stays compact for copying; optional evidence-supported overlays/accents and conditional safety/rights notes remain controlled by the workflow prompt.
+
+---
+
+## 🧪 Golden Sample — Reply Shape
+
+ChatGPT's reply must match this shape exactly. Anything beyond it is drift:
+
+```text
+FLOW KIT — Sereal Kacang Hijau x model wanita dewasa berhijab
+
+[one fenced code block: the master prompt, starting at
+"Create a single 10-second, 9:16 vertical product advertisement..."
+and ending at the final "NEGATIVE:" line — nothing else inside]
+
+flow-1-product.png
+flow-2-hero.png
+flow-3-lifestyle.png
+```
+
+Header format follows the workflow: `Tanpa Model` ends at the product name — no `x [model descriptor]`. Checklist: exactly one header line, exactly one code block, exactly three images in order. Optional overlays/accents are omitted when unsupported. With Model may append only conditional model-rights or material-ambiguity notes. No manifest, tables, Flow settings, or other commentary.
 
 ---
 
@@ -89,7 +110,7 @@ Generate in order: **1 → 2 → 3**. Image 2 is the master frame. Image 3 is ge
 
 | Requirement | Notes |
 |---|---|
-| **ChatGPT with image generation** | Produces the master prompt and the three images. |
+| **ChatGPT with image generation** | Produces the master prompt and the three images. Exact image ratio/resolution depends on generator; final video target remains 9:16, 1080×1920. |
 | **Google Flow account** | Generates the final video. |
 | **1 product photo** | Complete product, one variant, no marketplace UI. |
 | **1 model photo** | **Dengan Model only.** One person, clear face, simple wardrobe. |
@@ -125,12 +146,12 @@ Generate in order: **1 → 2 → 3**. Image 2 is the master frame. Image 3 is ge
 | Section | What it controls |
 |---|---|
 | `PRODUCT LOCK` | Concrete shape, proportions, colors, materials, finish, logo placement, and visible label text. One product unit only. |
-| `MODEL LOCK` / `HAND LOCK` | Face, skin, hair, wardrobe — or, for product-only ads, one hand with consistent skin tone, nails, and sleeve. |
+| `MODEL LOCK` / `HAND LOCK` | Preserve reference identity/presentation when model appears; product-only or optional single-hand shots when more relevant. |
 | `INGREDIENT ROLES` | Image 2 is the master frame; Image 3 must match it exactly. |
 | `REFERENCE USE` | References are not frames. They cannot be displayed, animated, panned, zoomed, or frozen. |
-| `STYLE` | Concrete lighting, lens, depth of field, color grade, and material realism. |
-| `ON-SCREEN GRAPHICS` | Exactly three text overlays and two graphic accents. Never covering the logo. |
-| `TIMELINE` | Six beats, first frame already showing the product, closing hold at the end. |
+| `STYLE` | Product-appropriate Indonesian context, concrete lighting/lens/grade, and realism matched across ingredient images. |
+| `ON-SCREEN GRAPHICS` | Zero to three evidence-supported text overlays and zero to two useful accents. Omit anything redundant, unsupported, unreadable, or obstructive. |
+| `TIMELINE` | Six beats across exactly 10 seconds; adapt actions to product evidence. Opening shows product; model appears only if relevant/safe; closing holds at end. |
 | `CINEMATIC NOTES` | Camera, photographic effect, and transition for each beat. Simple moves and hard cuts only. |
 | `NEGATIVE` | No faces or people where banned, no duplicate product, no floating product, no plastic skin, no HDR, no wide-angle distortion, and no visual effects soup. |
 
@@ -140,20 +161,20 @@ Generate in order: **1 → 2 → 3**. Image 2 is the master frame. Image 3 is ge
 
 | # | Beat | Window | Job |
 |---|---|---|---|
-| 1 | **Hook** | 0.0–1.5s | Product visible from frame one, headline overlay |
-| 2 | **Feature** | 1.5–3.0s | One clear product detail, feature label, accent arrow |
-| 3 | **Demo** | 3.0–4.5s | One simple action; hard cut to the second product state if applicable |
-| 4 | **Benefit** | 4.5–6.5s | Product in use, benefit card, accent sparkle |
+| 1 | **Hook** | 0.0–1.5s | Product visible from frame one; optional product-specific headline |
+| 2 | **Feature** | 1.5–3.0s | One visible product detail; optional verified label/accent |
+| 3 | **Demo** | 3.0–4.5s | One safe action only if product supports it; otherwise product presentation; verified state changes use hard match cut |
+| 4 | **Benefit** | 4.5–6.5s | Evidence-supported use/result or neutral presentation; optional overlay/accent |
 | 5 | **Value** | 6.5–8.0s | Hero detail or product beauty shot |
 | 6 | **Closing** | 8.0–10.0s | Steady hold, no on-screen text, no new action |
 
-**Format:** 10 seconds · 9:16 vertical · 1080×1920 · 24fps · six beats · hard cuts under 0.2s.
+**Format:** exactly 10 seconds · 9:16 vertical · 1080×1920 · six timed beats · hard cuts. If ingredient generation cannot output exact 9:16/1080×1920, use closest portrait source and crop safely; final video remains 9:16/1080×1920. Frame rate follows the Flow setting.
 
-**Audio:** Indonesian voice-over, 26–32 words total, starts at 0.2s. No music, no jingle, no captions, no subtitles.
+**Audio:** Indonesian voice-over, starts at 0.2s; 24–30 words is a pacing guide, not a quota. Keep lines natural and evidence-based. No music, jingle, captions, or subtitles.
 
-**Text:** exactly three overlays and two graphic accents. Sticker style: pop in once, then static. No CTA, no prices, no ratings, no platform logos.
+**Text:** zero to three optional product-specific overlays and zero to two useful accents. Claims require visible evidence or explicit user-provided product information; staged demos do not prove performance. Omit unsupported or obstructive text. No CTA, prices, ratings, or platform logos.
 
-> ⚙️ **Flow note:** available duration depends on the selected Flow model and plan. The prompt is written for 10 seconds; if your Flow model only supports 8 seconds with ingredients, generate the closest duration and cut the last beat in Flow.
+> ⚙️ **Flow note:** prompt output always targets 10 seconds. Verify that the selected Flow model/plan supports this duration with ingredients. Do not simply cut the closing beat; if Flow cannot produce 10 seconds, use supported edit controls to retime all six beats while preserving opening, closing, and message. If that is unavailable, the workflow cannot meet this spec in that Flow mode.
 
 ---
 
@@ -165,12 +186,13 @@ Long prompts are not the problem. Drift comes from repetition, conflicting value
 |---|---|
 | **One value per attribute** | Each attribute is stated once, in the section that owns it. No duplicate lighting, lens, or wardrobe instructions. |
 | **One idea per beat** | Each beat has one dominant action. Extra actions are cut, not compressed. |
-| **No circular references** | The prompt never says “same lighting as Image 2.” It names the source, direction, temperature, and shadow quality. |
+| **No circular references** | `STYLE` names source, direction, temperature, and shadow quality. Ingredient image descriptions reuse those values without introducing alternatives. |
 | **Master frame first** | Image 2 locks scale, environment, lighting, and opening state before Image 3 is generated. |
 | **Hard cuts only** | No dissolve, whip pan, zoom blur, morph, or mechanism animation. |
+| **Product-specific copy** | Overlay claims, demonstrations, and benefits must fit the uploaded product and visible evidence; examples are not default claims. |
 | **Concrete language** | Light source, surface, material, lens, and action. No “beautiful,” “stunning,” or “high quality.” |
 
-The master prompt targets **950–1200 words** — a density guide, not a quota. Every sentence must add one visual fact.
+The master prompt uses only as much detail as needed for accurate product/model locks, safety, and product-specific direction. The former 950–1200-word range is guidance only, never a quota.
 
 ---
 
@@ -225,6 +247,7 @@ AI video is probabilistic. The kit improves consistency, but it does not guarant
 
 - Generate **3–4 variations** and pick the most consistent one.
 - If one image fails, **regenerate that image only** in the same chat.
+- Ingredient images may use the generator's closest supported portrait size. Keep the final video exactly 9:16 at 1080×1920; crop or reframe safely without cutting off product or model.
 - If a hand keeps failing, switch that beat to a **product-only shot**.
 - Preserve the product's original label. Never invent certifications, badges, or claims.
 
@@ -234,7 +257,7 @@ AI video is probabilistic. The kit improves consistency, but it does not guarant
 
 Contributions are welcome. Keep the contract intact:
 
-- **One master prompt + three images.** No storyboards, keyframes, shot lists, or timing tables.
+- **One master prompt + three images.** No storyboards, keyframes, shot lists, or timing tables. Preserve exactly 10 seconds, 9:16, 1080×1920, and six beats; adapt actions and optional graphics to product evidence.
 - **No Flow settings in the prompt output.** The user configures Flow manually.
 - **No CTA, music, captions, or platform logos.**
 - **Test both workflows** before opening a pull request.
@@ -246,7 +269,7 @@ Open an issue for bugs, drift patterns, or product categories that need better h
 
 ## 📄 License
 
-All rights reserved by **Banten IT Solutions**. Published for reference and use with the BITS Video Prompt Generator workflows. For commercial licensing, white-label deployment, or collaboration, contact [bits.co.id](https://bits.co.id).
+Released under the [MIT License](LICENSE). Copyright © 2026 **Banten IT Solutions**.
 
 ---
 

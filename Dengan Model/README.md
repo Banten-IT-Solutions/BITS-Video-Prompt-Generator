@@ -4,18 +4,19 @@ Ubah **1 foto produk + 1 foto model** menjadi **satu video iklan 10 detik** lang
 
 Tanpa CapCut. Tanpa edit manual.
 
-Model yang Anda upload dipakai sebagai acuan wajah, rambut, warna kulit, proporsi tubuh, dan wardrobe. Produk tetap mengikuti foto produk.
+Model yang Anda upload menjadi acuan identitas dan presentasi personal saat tampil. Produk tetap mengikuti foto produk. Untuk produk wearable, tampilkan produk akurat tanpa mengubah identitas model. Aturan lini Muslimah tetap berlaku: hijab selalu dipakai; pilih varian paling modest dari produk yang sama bila perlu. Gunakan shot produk-only bila styling dan akurasi produk berbenturan.
 
 Folder ini adalah versi One Shot. File storyboard dan video lama ada di `References/`, tetapi bukan bagian dari alur ini. Yang masuk Flow hanya 3 gambar bersih tanpa teks tambahan.
 
-Prompt ini sengaja panjang dan rinci. Google Flow tidak mempublikasikan batas karakter, dan detail tambahan justru menaikkan kontrol. Yang membuat hasil melenceng bukan panjangnya, tetapi instruksi yang berulang, saling bertentangan, atau terlalu banyak ide dalam satu beat.
+Prompt ini sengaja panjang dan rinci. Batas prompt Google Flow tidak didokumentasikan di repo ini dan bisa berubah antar model atau paket Flow — cek langsung di sesi Flow Anda. Kalau prompt ditolak atau terpotong, pangkas detail `CINEMATIC NOTES` dulu, lalu `STYLE`, lalu detail `TIMELINE` tanpa mengubah timing dan overlay. Yang membuat hasil melenceng bukan panjangnya, tetapi instruksi yang berulang, saling bertentangan, atau terlalu banyak ide dalam satu beat.
 
 ---
 
 ## Yang Anda butuhkan
 
+- Hak atau izin penggunaan komersial untuk foto/model yang dipakai. Pastikan persetujuan model mencakup iklan dan kanal publikasi.
 - 1 foto produk yang jelas.
-- 1 foto model yang jelas.
+- 1 foto model yang jelas; model dipakai dalam shot hanya jika relevan dan aman. Shot produk-only tetap diizinkan.
 - ChatGPT yang bisa generate image.
 - Akun Google Flow.
 
@@ -67,7 +68,7 @@ ChatGPT langsung mengembalikan dua hal:
 |---|---|
 | `flow-1-product.png` | Produk di background polos. Acuan bentuk, warna, material, dan label. |
 | `flow-2-hero.png` | Master frame. Model + produk di environment. Acuan wajah, wardrobe, komposisi, dan lighting. |
-| `flow-3-lifestyle.png` | Dibuat dari `flow-2-hero.png`. Acuan interaksi, skala, dan real-world use. |
+| `flow-3-lifestyle.png` | Dibuat dari `flow-2-hero.png`. Acuan interaksi yang sesuai produk, atau komposisi produk-only jika interaksi tidak relevan/aman. |
 
 Urutan generate: **1 → 2 → 3**. Gambar 2 adalah master frame. Gambar 3 dibuat dari gambar 2, bukan dari foto model asli. Ini yang menjaga wajah dan wardrobe tidak berubah.
 
@@ -83,6 +84,8 @@ Tidak ada manifest, storyboard, tabel, atau setting Flow.
 
 Jangan upload foto model asli ke Flow. Identitas model sudah dibawa oleh `flow-2-hero.png` dan `flow-3-lifestyle.png`.
 
+> ⚙️ **Catatan durasi:** spesifikasi prompt tetap 10 detik. Verifikasi dukungan durasi pada model/paket Flow Anda. Jangan membuang beat closing; jika perlu, retime keenam beat secara proporsional. Jika Flow tidak mendukungnya, mode tersebut belum memenuhi spesifikasi ini.
+
 ---
 
 ## Yang dikunci di prompt
@@ -90,13 +93,13 @@ Jangan upload foto model asli ke Flow. Identitas model sudah dibawa oleh `flow-2
 | Bagian | Isi |
 |---|---|
 | `PRODUCT LOCK` | Deskripsi konkret bentuk, warna, material, finish, logo, dan komponen. Satu unit produk. Label asli dipertahankan. |
-| `MODEL LOCK` | Deskripsi konkret wajah, warna kulit, mata, rambut, dan proporsi. Identitas dipertahankan; pakaian ditangani `WARDROBE LOCK`. Tidak ada orang lain atau hewan. |
-| `WARDROBE LOCK` | Produk yang dipakai (apparel) menjadi wardrobe utama: panjang lengan, hem, dan neckline persis produk. Bagian pendek menampilkan kulit. Rambut dan hijab mengikuti kategori produk. |
+| `MODEL LOCK` | Identitas model mengikuti foto referensi; tidak menyimpulkan agama dari penampilan. |
+| `WARDROBE LOCK` | Produk wearable ditampilkan akurat jika relevan dan aman. Aturan Muslimah tetap berlaku: untuk lini Muslimah, hijab selalu dipakai; pilih varian paling modest dari produk yang sama bila perlu. |
 | `INGREDIENT ROLES` | Gambar 2 adalah master frame. Gambar 3 harus sama persis dengan gambar 2. |
 | `REFERENCE USE` | Gambar hanya referensi. Tidak boleh dianimasikan, di-pan, di-zoom, atau dipakai sebagai frame diam. |
-| `STYLE` | Lighting konkret: soft diffused window light from upper left, 5200K. Lensa 50mm f/2.8. Tekstur kulit natural. |
-| `ON-SCREEN GRAPHICS` | 3 overlay gaya sticker TikTok: outline tebal, offset shadow, swipe warna aksen dari palette produk. Pop-in sekali lalu statis. Tidak boleh menutup wajah, mata, atau logo. |
-| `TIMELINE` | Frame pertama sudah menampilkan produk + model. Closing ditahan 0.5–1.0 detik. |
+| `STYLE` | Lighting, lensa, dan depth of field dipilih agar sesuai produk, skala shot, serta lingkungan. |
+| `ON-SCREEN GRAPHICS` | 0–3 overlay dan 0–2 aksen opsional. Tampilkan hanya informasi spesifik produk yang didukung bukti; hilangkan yang tidak relevan, tak terbaca, atau menutupi wajah/logo. |
+| `TIMELINE` | Frame pertama menampilkan produk; model muncul hanya jika relevan dan aman. Enam beat tetap 10 detik; closing ditahan 0.5–1.0 detik. |
 | `CINEMATIC NOTES` | Camera, effect, transition per beat. Hanya gerakan sederhana dan hard cut. |
 | `NEGATIVE` | Larangan produk ganda, produk melayang, kulit plastik, HDR, wide-angle distortion, dan efek visual berlebihan. |
 
@@ -108,7 +111,7 @@ Sebelum mengirim gambar, ChatGPT menjalankan `FINAL CONSISTENCY CHECK`: produk, 
 
 ## Setelah video jadi
 
-- Download 1080p.
+- Export final video at 1080×1920 (9:16) when supported by Flow.
 - Upload ke TikTok dan Shopee.
 - Taruh CTA di caption, bukan di video.
 - Tambahkan disclosure affiliate/AI jika diperlukan.
@@ -119,22 +122,22 @@ Sebelum mengirim gambar, ChatGPT menjalankan `FINAL CONSISTENCY CHECK`: produk, 
 
 | Masalah | Yang dilakukan |
 |---|---|
-| Wajah model berubah | Regenerate dengan `flow-2-hero.png` sebagai Ingredient 2. Pastikan `flow-3-lifestyle.png` dibuat dari gambar 2. Kurangi close-up wajah. |
+| Wajah model berubah | Jika model dipakai, regenerate dengan `flow-2-hero.png` sebagai Ingredient 2 dan buat `flow-3-lifestyle.png` dari gambar 2. Kurangi close-up. Product-only shot tetap valid.
 | Wardrobe berubah | Regenerate `flow-3-lifestyle.png` dari `flow-2-hero.png`, bukan dari foto model asli. |
-| Produk berubah jadi panjang | Pastikan `WARDROBE LOCK` menyebut panjang lengan dan hem persis seperti produk, dan `NEGATIVE` melarang menambah lapisan atau panjang. |
-| Hijab tetap dipakai padahal produk pendek/terbuka | Aturan styling: produk terbuka → rambut terurai tanpa hijab; produk modest (gamis, abaya) → hijab dipertahankan. |
-| Brand muslimah tapi ada varian pendek | Muslimah override: hijab selalu dipakai, lalu pilih varian paling modest dari produk yang sama. Jangan tampilkan varian terbuka tanpa hijab. |
+| Produk wearable berubah bentuk | Pastikan `WARDROBE LOCK` menyebut cut, panjang, dan fit yang terlihat. Jika tidak bisa ditampilkan akurat dengan presentasi model, gunakan shot produk terpisah.
+| Model styling berubah tanpa diminta | Pertahankan penampilan personal dari foto model, kecuali aturan produk Muslimah atau instruksi wardrobe eksplisit berlaku. Jangan menyimpulkan agama dari penampilan. |
+| Produk lini Muslimah | Hijab selalu dipakai, termasuk untuk varian pendek/terbuka; pilih varian paling modest dari produk yang sama bila tersedia. Jangan tampilkan lini Muslimah tanpa hijab. |
 | Aksesoris kepala muncul sendiri | Pastikan `no accessories that are not the product` tetap ada di prompt. |
-| Warna aksen tabrakan dengan environment | Fallback otomatis merah-kuning. Aksen harus diambil dari palette produk dan sama di semua beat. |
-| Angka di overlay mengada-ada | Angka harus bisa diverifikasi dari foto produk atau demo; kalau tidak, hapus angkanya. |
+| Warna aksen tabrakan dengan environment | Pilih ulang aksen dari palet produk; jika warnanya tidak jelas, pilih dua warna netral berkontras tinggi. Gunakan sama di semua beat. |
+| Overlay tidak sesuai produk atau klaim tidak terbukti | Ganti dengan fitur/benefit spesifik yang didukung foto atau demo. Angka hanya boleh dipakai jika persisnya bisa diverifikasi; jika tidak, gunakan label nonnumerik. |
 | Muncul orang lain atau hewan | Pastikan `no extra people, no background faces, no pets` tetap ada di prompt. |
 | Produk ganda atau melayang | Pastikan `one product unit only` dan `no floating product` tetap ada. Kurangi gerakan tangan. |
 | Tangan menutup logo | Ganti aksi jadi memegang badan produk, bukan bagian depan. |
-| Overlay menutup wajah | Geser ke top-left dan lower-left, atau kurangi jadi 2 overlay. |
+| Overlay menutup wajah atau produk | Pindahkan ke ruang aman; jika tetap menghalangi, hapus overlay tersebut. Overlay opsional, bukan target jumlah.
 | Kulit seperti plastik | Pertahankan `natural skin texture with visible pores, no beauty filter`. |
 | Label produk berubah | Regenerate `flow-1-product.png`. Kurangi close-up ekstrem pada label. |
 | Satu gambar melenceng | Regenerate gambar itu saja di chat yang sama. |
-| Teks rusak | Kurangi jadi 2 overlay, atau pakai versi tanpa teks. |
+| Teks rusak atau tak relevan | Kurangi jumlah overlay sampai 0–3; pertahankan hanya teks terbaca dan didukung bukti. |
 | Produk berubah | Regenerate dengan `flow-1-product.png`, kurangi gerakan kamera. |
 | Tangan cacat | Ganti beat itu jadi produk saja tanpa tangan. |
 | Cut terasa aneh | Minta hard cuts, atau kurangi jumlah beat. |
@@ -146,7 +149,7 @@ Jangan pindah ke CapCut. Perbaiki di Flow.
 
 ## Tips supaya wajah model konsisten
 
-- Untuk produk pakaian, pakaian di foto model tidak masalah. Produk selalu menjadi wardrobe utama, bukan pakaian referensi.
+- Untuk produk wearable, pakaian produk harus terlihat akurat; pertahankan identitas dan presentasi personal model. Jika tidak cocok, tampilkan produk terpisah atau gunakan framing aman.
 
 - Gunakan foto model dengan wajah tajam dan terang.
 - Hindari foto wajah tertutup rambut, masker, tangan, atau bayangan keras.
@@ -155,7 +158,7 @@ Jangan pindah ke CapCut. Perbaiki di Flow.
 - Jangan upload foto model dari beberapa orang sekaligus.
 - Di Flow, gunakan `flow-2-hero.png` sebagai acuan utama wajah.
 - Jaga environment di `flow-2-hero.png` tetap sederhana dan tidak ramai. Background yang bersih membantu Flow menyatukan ingredient.
-- Pertahankan sudut wajah 3/4 dengan kedua mata terlihat.
+- Jika wajah menghadap kamera, gunakan sudut alami yang menjaga identitas terbaca; jangan memaksa sudut 3/4 bila referensi atau produk tidak cocok.
 - Kalau wajah masih berubah, kurangi durasi close-up dan perbanyak medium shot.
 
 ---
@@ -173,11 +176,11 @@ Jangan pindah ke CapCut. Perbaiki di Flow.
 
 ## Kalau prompt terasa terlalu panjang
 
-Prompt final sekitar 950–1200 kata. Itu normal untuk 6 beat dengan 3 gambar.
+Prompt final harus sesingkat mungkin sambil mempertahankan kunci produk, model, keselamatan, timing, dan bukti. 950–1200 kata bukan kuota.
 
 Kalau perlu memangkas:
 
-1. Jangan potong `PRODUCT LOCK`, `MODEL LOCK`, `WARDROBE LOCK`, `REFERENCE USE`, atau `NEGATIVE`.
+1. Jangan potong `PRODUCT LOCK`, `MODEL LOCK`, `WARDROBE LOCK`, `REFERENCE USE`, atau `NEGATIVE`. Jumlah beat/durasi tetap 6 beat dan 10 detik; hapus pengulangan, bukan kunci format.
 2. Potong dulu detail `CINEMATIC NOTES`.
 3. Lalu ringkas `STYLE`.
 4. Terakhir kurangi detail `TIMELINE`, tetapi jangan ubah timing dan overlay.

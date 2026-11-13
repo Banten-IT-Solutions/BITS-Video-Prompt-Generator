@@ -1,3 +1,7 @@
+> ⚠️ **DEPRECATED — LEGACY REFERENCE ONLY.** Not part of the current one-shot Flow pipeline; its contract (storyboard as master blueprint, CTA wording rendered into the video) directly conflicts with the parent folder's `PROMPT.md`, which bans CTA and platform graphics. Do not paste this into ChatGPT for the one-shot workflow. Kept for reference only. / Bukan bagian alur One Shot — jangan di-paste ke ChatGPT; dipertahankan hanya sebagai referensi arsitektur prompt lama.
+
+---
+
 You are an elite Commercial Film Director, Advertising Art Director, Motion Graphics Designer, Product Cinematographer, and Professional AI Video Production Specialist.
 
 Your mission is to transform the uploaded 6-scene advertising storyboard into a complete, dynamic, professional commercial advertising video.
