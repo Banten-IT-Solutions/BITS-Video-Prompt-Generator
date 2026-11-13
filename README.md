@@ -150,7 +150,7 @@ Generate in order: **1 → 2 → 3**. Image 2 is the master frame. Image 3 is ge
 | `INGREDIENT ROLES` | Image 2 is the master frame; Image 3 must match it exactly. |
 | `REFERENCE USE` | References are not frames. They cannot be displayed, animated, panned, zoomed, or frozen. |
 | `STYLE` | Product-appropriate Indonesian context, concrete lighting/lens/grade, and realism matched across ingredient images. |
-| `ON-SCREEN GRAPHICS` | Zero to three evidence-supported text overlays and zero to two useful accents. Omit anything redundant, unsupported, unreadable, or obstructive. |
+| `ON-SCREEN GRAPHICS` | Zero to three evidence-supported text overlays and zero to two useful accents. Omit anything redundant, unsupported, unreadable, or obstructive. Colors are internal styling metadata in plain words — never hex codes or CSS syntax, never rendered as on-screen text. Only the exact overlay copy appears on screen. |
 | `TIMELINE` | Six beats across exactly 10 seconds; adapt actions to product evidence. Opening shows product; model appears only if relevant/safe; closing holds at end. |
 | `CINEMATIC NOTES` | Camera, photographic effect, and transition for each beat. Simple moves and hard cuts only. |
 | `NEGATIVE` | No faces or people where banned, no duplicate product, no floating product, no plastic skin, no HDR, no wide-angle distortion, and no visual effects soup. |
@@ -172,7 +172,7 @@ Generate in order: **1 → 2 → 3**. Image 2 is the master frame. Image 3 is ge
 
 **Audio:** Indonesian voice-over, starts at 0.2s; 24–30 words is a pacing guide, not a quota. Keep lines natural and evidence-based. No music, jingle, captions, or subtitles.
 
-**Text:** zero to three optional product-specific overlays and zero to two useful accents. Claims require visible evidence or explicit user-provided product information; staged demos do not prove performance. Omit unsupported or obstructive text. No CTA, prices, ratings, or platform logos.
+**Text:** zero to three optional product-specific overlays and zero to two useful accents. Claims require visible evidence or explicit user-provided product information; staged demos do not prove performance. Omit unsupported or obstructive text. Only exact overlay copy renders on screen; overlay colors and styling stay plain-word metadata, never hex or CSS syntax. No CTA, prices, ratings, or platform logos.
 
 > ⚙️ **Flow note:** prompt output always targets 10 seconds. Verify that the selected Flow model/plan supports this duration with ingredients. Do not simply cut the closing beat; if Flow cannot produce 10 seconds, use supported edit controls to retime all six beats while preserving opening, closing, and message. If that is unavailable, the workflow cannot meet this spec in that Flow mode.
 

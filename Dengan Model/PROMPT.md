@@ -304,7 +304,7 @@ AUDIO:
 Indonesian [voice quality suited to product and intended audience] voice, conversational, friendly, natural pace. Choose voice quality for the product and intended audience; do not infer voice from the model's appearance. If the brand name is unusual, include a simple phonetic spelling. VO starts at 0.2 seconds. No background music, no jingle, no beat. Only voice-over and subtle product SFX.
 
 ON-SCREEN GRAPHICS:
-Use only overlays and graphic accents that improve clarity for this product. Use zero to three overlays and zero to two accents; omit unused slots instead of filling them. Choose a visual treatment suited to the product category, style mode, and audience, not a fixed sticker look. Select colors from the product palette, or high-contrast neutrals if needed. Keep chosen colors and styling consistent. Each overlay appears once and remains static. Use only supportable product-specific text. Never cover the model's face, eyes, or product logo; omit any overlay that cannot fit safely.
+Use only overlays and graphic accents that improve clarity for this product. Use zero to three overlays and zero to two accents; omit unused slots instead of filling them. Choose a visual treatment suited to the product category, style mode, and audience, not a fixed sticker look. Select colors from the product palette, or high-contrast neutrals if needed. Keep chosen colors and styling consistent. Colors and styling are internal metadata only. Describe colors in plain words; never include hexadecimal color codes or CSS color syntax anywhere in the generated master prompt. They must never render on screen. The only permitted on-screen text is the exact quoted overlay copy; do not reproduce styling descriptions as text. Each overlay appears once and remains static. Use only supportable product-specific text. Never cover the model's face, eyes, or product logo; omit any overlay that cannot fit safely.
 [Optional Hook overlay, 0.0–1.5: concise product-specific headline, in a treatment suited to the chosen style and legible against the scene. Omit if it adds no useful information.]
 [Optional Feature overlay, 1.5–3.0: concise visible feature or verified fact. Omit if unsupported or redundant.]
 [Optional Benefit overlay, 4.5–6.5: concise, evidence-supported benefit. Omit if it implies unverified performance.]
@@ -332,7 +332,7 @@ NO CTA / PLATFORM NEUTRAL:
 Do not show or say "checkout", "beli sekarang", "keranjang kuning", "klik link", "Shopee", "TikTok Shop", prices, ratings, or platform logos. The video must be usable on both TikTok and Shopee.
 
 NEGATIVE:
-No on-screen text beyond the selected overlays, except the product's own label; no overlay covering the face, eyes, or logo; no face morphing; no identity change; no extra people; no background faces; no pets; no duplicate product units; no floating product; no extra fingers; no deformed hands; no product deformation; no logo invention; no invented label text or certifications; no invented numbers or statistics; no watermark; no marketplace UI; no music; no captions; no subtitles; no scene numbers; no storyboard borders; no storyboard page; no reference grid; no contact sheet; no camera shake; no flicker; no glow; no particles; no light leaks; no lens flares; no motion blur overlays; no dissolve; no whip pan; no zoom blur; no plastic skin; no beauty filter; no HDR; no over-sharpening; no wide-angle distortion; no lip-sync; no redesigned product cut; no unrequested hairstyle or headwear change; no accessories absent from product/reference unless explicitly requested; no sexualized posing; no extra props in the scene.
+No on-screen text beyond the selected overlays, except the product's own label; no hex codes, color codes, or styling metadata rendered as on-screen text; no overlay covering the face, eyes, or logo; no face morphing; no identity change; no extra people; no background faces; no pets; no duplicate product units; no floating product; no extra fingers; no deformed hands; no product deformation; no logo invention; no invented label text or certifications; no invented numbers or statistics; no watermark; no marketplace UI; no music; no captions; no subtitles; no scene numbers; no storyboard borders; no storyboard page; no reference grid; no contact sheet; no camera shake; no flicker; no glow; no particles; no light leaks; no lens flares; no motion blur overlays; no dissolve; no whip pan; no zoom blur; no plastic skin; no beauty filter; no HDR; no over-sharpening; no wide-angle distortion; no lip-sync; no redesigned product cut; no unrequested hairstyle or headwear change; no accessories absent from product/reference unless explicitly requested; no sexualized posing; no extra props in the scene.
 ```
 
 Rules for the finished prompt:
@@ -350,7 +350,7 @@ Rules for the finished prompt:
 - For a worn product shown on model, state visible cut, length, and fit accurately; preserve reference presentation and explicit user requirements. Use product-only shot if they conflict.
 - Name the light source, direction, color temperature, and shadow quality. Never write "same lighting as Ingredient 2" or any other circular reference.
 - Use concrete visual language: name the light source, surface, material, lens, and action. Avoid vague words like beautiful, stunning, cinematic, or high quality.
-- Choose two accent colors from the product's own palette and name them concretely; never write "brand colors". If no product colors are clearly readable, choose two neutral colors with strong contrast against both product and background; state those colors once and use them consistently. Never default to fixed accent colors.
+- Choose two accent colors from the product's own palette and name them in plain natural language (for example warm off-white, deep teal); never write "brand colors", hex codes, or CSS color syntax. If no product colors are clearly readable, choose two neutral colors with strong contrast against both product and background; state those colors once and use them consistently. Never default to fixed accent colors.
 - Any number in an overlay must be verifiable from the images or the demo. Never invent statistics.
 - Choose lens and depth of field to suit the product scale and shot; avoid wide-angle distortion of face or product.
 - Keep wording plain and literal. Do not use metaphors or poetic descriptions.
@@ -471,6 +471,7 @@ Do not:
 - Use background music.
 - Add more than three text overlays or more than two graphic accents.
 - Use accent colors that lack contrast or conflict with the product palette.
+- Write hex codes, CSS color values, or other styling metadata as on-screen text. Colors are described in plain words only.
 - Invent numbers, statistics, or percentages for overlays.
 - Animate a folding, opening, or assembly mechanism.
 - Change the model's identity between shots.

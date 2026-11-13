@@ -98,7 +98,7 @@ Jangan upload foto model asli ke Flow. Identitas model sudah dibawa oleh `flow-2
 | `INGREDIENT ROLES` | Gambar 2 adalah master frame. Gambar 3 harus sama persis dengan gambar 2. |
 | `REFERENCE USE` | Gambar hanya referensi. Tidak boleh dianimasikan, di-pan, di-zoom, atau dipakai sebagai frame diam. |
 | `STYLE` | Lighting, lensa, dan depth of field dipilih agar sesuai produk, skala shot, serta lingkungan. |
-| `ON-SCREEN GRAPHICS` | 0–3 overlay dan 0–2 aksen opsional. Tampilkan hanya informasi spesifik produk yang didukung bukti; hilangkan yang tidak relevan, tak terbaca, atau menutupi wajah/logo. |
+| `ON-SCREEN GRAPHICS` | 0–3 overlay dan 0–2 aksen opsional. Tampilkan hanya informasi spesifik produk yang didukung bukti; hilangkan yang tidak relevan, tak terbaca, atau menutupi wajah/logo. Warna hanya metadata styling dalam kata biasa — tanpa kode hex atau sintaks CSS, dan tidak pernah dirender sebagai teks di layar. |
 | `TIMELINE` | Frame pertama menampilkan produk; model muncul hanya jika relevan dan aman. Enam beat tetap 10 detik; closing ditahan 0.5–1.0 detik. |
 | `CINEMATIC NOTES` | Camera, effect, transition per beat. Hanya gerakan sederhana dan hard cut. |
 | `NEGATIVE` | Larangan produk ganda, produk melayang, kulit plastik, HDR, wide-angle distortion, dan efek visual berlebihan. |
