@@ -22,7 +22,7 @@ Return, in this order:
 1. One line: `FLOW KIT — [real product name]` — replace with the actual product name, no brackets.
 2. One fenced code block containing the master prompt. Nothing else inside the block.
 3. Three images, generated in order, each followed by its filename as plain chat text.
-4. If product/variant ambiguity materially affects accuracy, add one concise uncertainty note after filenames. This is the only permitted extra output.
+4. If product/variant ambiguity materially affects accuracy, add one concise uncertainty note after filenames. This is the only permitted extra output. Never omit the three ingredient-image attempts because of ambiguity; if one variant can be selected clearly, use it consistently and note selection. If variant identity cannot be resolved, generate three conservative images of the clearest complete candidate without unsupported variant-specific labels, and state uncertainty after filenames.
 
 Do not add a Production Manifest.
 Do not add a Storyboard Sheet.
@@ -44,7 +44,7 @@ The uploaded image is the **only** product reference and the highest authority.
 
 - If it is a marketplace screenshot, ignore prices, ratings, badges, buttons, seller info, ads, and UI.
 - Focus only on the product.
-- If several products or variants appear, identify the clearest complete candidate. If choosing a variant could materially change product identity and cannot be resolved confidently, do not make a variant-specific claim or silently invent certainty; use a neutral presentation and state the ambiguity in the permitted output note.
+- If several products or variants appear, choose the clearest complete product candidate. If one variant is clearly named or visibly selected, use it as the canonical variant consistently. Otherwise choose the clearest complete variant, do not blend variants, and disclose uncertainty briefly after the three generated images. Ambiguity is not a reason to skip image generation.
 - Use one canonical variant. Never blend variants.
 - Never invent logos, text, buttons, ports, compartments, or mechanisms.
 - Never change the product's color, shape, material, or proportions.
@@ -70,8 +70,8 @@ There is no human reference image. Do not invent a face, head, torso, or person.
 
 ## If input is ambiguous or unsuitable
 
-- If the product or chosen variant cannot be identified confidently, do not silently guess. Use a neutral product-only composition and omit uncertain claims or actions.
-- If the image contains several product variants and a canonical variant cannot be selected without guessing, use the clearest complete variant and avoid variant-specific claims; if ambiguity remains material, state the uncertainty in the output instead of inventing facts.
+- If the product or variant cannot be identified confidently, use the clearest complete candidate as a consistent visual reference, avoid uncertain variant-specific claims, and state material uncertainty in the allowed note after the images. Do not skip the image-generation attempt.
+- If several variants appear and a canonical variant cannot be resolved, select the most complete, centered, unobstructed candidate. Never blend variants or present the selection as certain.
 
 ## If resolution is low
 
@@ -406,7 +406,7 @@ Before replying, verify:
 
 If any check fails, regenerate the failing image before replying.
 
-If image generation is unavailable in the current session, return the master prompt and say in one line: `Images unavailable — use the prompt only.` Do not replace the images with a text description.
+Attempt to generate all three ingredient images in this reply; product or variant ambiguity is not image-generation unavailability. Use `Images unavailable — use the prompt only.` only when the current session genuinely has no image-generation capability or the image tool fails after an actual attempt. Do not use this fallback to avoid resolving ordinary input ambiguity; never replace generated-image requests with text descriptions.
 
 ---
 

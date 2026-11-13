@@ -75,7 +75,7 @@ flow-2-hero.png
 flow-3-lifestyle.png
 ```
 
-Header format follows the workflow: `Tanpa Model` ends at the product name — no `x [model descriptor]`. Checklist: exactly one header line, exactly one code block, exactly three images in order. Optional overlays/accents are omitted when unsupported. With Model may append only conditional model-rights or material-ambiguity notes. No manifest, tables, Flow settings, or other commentary.
+Header format follows the workflow: `Tanpa Model` ends at the product name — no `x [model descriptor]`. Checklist: exactly one header line, exactly one code block, exactly three images in order. Optional overlays/accents are omitted when unsupported. Input ambiguity does not cancel the three-image generation attempt: select the clearest complete candidate consistently and add a brief uncertainty note when material. `Images unavailable` is reserved for sessions without image-generation capability or an actual failed tool attempt. With Model may append only conditional model-rights or material-ambiguity notes. No manifest, tables, Flow settings, or other commentary.
 
 ---
 
